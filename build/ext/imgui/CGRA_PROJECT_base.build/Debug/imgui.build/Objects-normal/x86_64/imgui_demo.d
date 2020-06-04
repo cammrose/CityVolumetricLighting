@@ -1,0 +1,4 @@
+dependencies: \
+  /Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/imgui/imgui_demo.cpp \
+  /Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/imgui/imgui.h \
+  /Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/imgui/imconfig.h

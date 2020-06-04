@@ -1,0 +1,3080 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		14E733E690A94A69B16FFAF0 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3B4BE8686A0E491584FBCAF9 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				B90507B1E0E6492E8A9B91EF /* CMake Rules */,
+			);
+			dependencies = (
+				D7D4D33415184DEA93CD4BC1 /* PBXTargetDependency */,
+				56E4520C7C9B4B7B928C7025 /* PBXTargetDependency */,
+				43CFFAE0ED174B3AB5F6D343 /* PBXTargetDependency */,
+				8FD254DAA6C6418A867720E8 /* PBXTargetDependency */,
+				AD17E3DD093C46D98329DA78 /* PBXTargetDependency */,
+				039B9A2DC6A6460BB9BD436C /* PBXTargetDependency */,
+				C52A75ACB11D491AB5150E58 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		43D798DC861640599276B56A /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6EBBE940B9CB474D93FF63FD /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				2CF560FD7E5D49658A9793BC /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				C5DA75AFD88143F7AB619540 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		6B50436CD9054A88ABF1EA4A /* uninstall */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FE6A86DA45A54711A18A8834 /* Build configuration list for PBXAggregateTarget "uninstall" */;
+			buildPhases = (
+				0C305776A3874525B94CE501 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = uninstall;
+			productName = uninstall;
+		};
+		929CA4D3E8B041EEBF99A1B2 /* res */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AA881FEFF30D4070A4780834 /* Build configuration list for PBXAggregateTarget "res" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = res;
+			productName = res;
+		};
+		BA0BBE94217D4B49ACD47824 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C4B529471CB74CACB77ECD44 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				5F9831B88159455B82E336B6 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1467E0D9971D4DE8AA83926C /* glew.c in Sources */ = {isa = PBXBuildFile; fileRef = EC5B5CE05AB048468C6B0CA7 /* glew.c */; };
+		26A61F2199AC47C49E1B17E5 /* context.c in Sources */ = {isa = PBXBuildFile; fileRef = 14C7ECDDA8744B2A888BBD45 /* context.c */; };
+		2A53C39B09674EF49A9367E1 /* cgra_geometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13A81E0DCB2D48B6A3A35172 /* cgra_geometry.cpp */; };
+		2A92A4DE84BD477D82496EA1 /* dummy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D1261C8D21446F7976DB382 /* dummy.cpp */; };
+		3282820844F548C19E0C219C /* glm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E335BA9F3FE412A81C834D9 /* glm.cpp */; };
+		3DE62F3071814893A0B684D3 /* cgra_gui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8C6B7156474D8C9284A3BF /* cgra_gui.cpp */; };
+		5292468041834DFC92DE5FAF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 406FC2C7A68E4D01B739983E /* main.cpp */; };
+		52EFCACC79F04938A9AFA582 /* imgui_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F48973DCE6A4B78A03CA8A0 /* imgui_demo.cpp */; };
+		64FE2B10C37A456EB28A1C16 /* window.c in Sources */ = {isa = PBXBuildFile; fileRef = FFBE8BB06B8D498E92DE2EA4 /* window.c */; };
+		8419AC6896CB4C66A6DDF346 /* iokit_joystick.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7F8B484C644D85A82FB9FD /* iokit_joystick.m */; };
+		849AB11DC08C4983816988B9 /* stb.c in Sources */ = {isa = PBXBuildFile; fileRef = D1698AEDD0BE43F4B15AE4D5 /* stb.c */; };
+		8D9C5BB2998D4258AB0730A3 /* cocoa_init.m in Sources */ = {isa = PBXBuildFile; fileRef = 437F567617D04525A7B8B074 /* cocoa_init.m */; };
+		8EBCBFF3FE9F49F39DA42DAA /* cgra_shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B4F23C44E244F268AA10974 /* cgra_shader.cpp */; };
+		94622B22CF28451A86185844 /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C08BEE1BB4F6FB98E179C /* init.c */; };
+		976CC35E7E5E4259807D3DD6 /* input.c in Sources */ = {isa = PBXBuildFile; fileRef = C26F8C4332F84BAEB08272E1 /* input.c */; };
+		999D51C3D1854CBCB7A99851 /* cgra_mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B500A2A173E4A8EB1A49822 /* cgra_mesh.cpp */; };
+		A718389F8BA74E2494877263 /* mach_time.c in Sources */ = {isa = PBXBuildFile; fileRef = 79085DFC0CF54BEE87858113 /* mach_time.c */; };
+		AC3CC639D02B4F3281B5E55A /* nsgl_context.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A884BB363344ECE86802D4F /* nsgl_context.m */; };
+		AE41C407075F45DAA3EC4F3C /* imgui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9098A291BF5C4541BA0F7DE2 /* imgui.cpp */; };
+		C298E9385A9C4010821F0422 /* imgui_draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 879F60AF55F4424F81C7793B /* imgui_draw.cpp */; };
+		C37AB1943C854EF2BE2C93E4 /* application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 930261FDD0E84A32AA94B00C /* application.cpp */; };
+		D0A3E9B647D0459097235A20 /* monitor.c in Sources */ = {isa = PBXBuildFile; fileRef = 611CD960EB4849AE8815E78F /* monitor.c */; };
+		D50059F1A96C4A168C94A713 /* cocoa_monitor.m in Sources */ = {isa = PBXBuildFile; fileRef = EE21030D3F48420EA311F503 /* cocoa_monitor.m */; };
+		DA40EBBC89C842A696C12816 /* posix_tls.c in Sources */ = {isa = PBXBuildFile; fileRef = 9C121A11F5614A6BA78F7C81 /* posix_tls.c */; };
+		E09962F33C914D059D8E559C /* cocoa_window.m in Sources */ = {isa = PBXBuildFile; fileRef = AEDDB16B51C04DC8AD05CE25 /* cocoa_window.m */; };
+		F0E2A69522B06ED900A2B730 /* cgra_shadows.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0E2A69322B06ED800A2B730 /* cgra_shadows.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0F2E8A195E3545C28C03C20E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D32569D607514A129169F3CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14E733E690A94A69B16FFAF0;
+			remoteInfo = ALL_BUILD;
+		};
+		24444273305048C3B83D02C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D32569D607514A129169F3CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F4F919701454C7D9D41126F;
+			remoteInfo = glew;
+		};
+		368677E2061741579D3F01EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D32569D607514A129169F3CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA0BBE94217D4B49ACD47824;
+			remoteInfo = ZERO_CHECK;
+		};
+		43F300E037DF415DAA5FB1BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D32569D607514A129169F3CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24AEC5F27174416894F97CCA;
+			remoteInfo = glm_dummy;
+		};
+		75407C4CC8F94EEFA1115CDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D32569D607514A129169F3CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7691A2397E347BD8C51B9D7;
+			remoteInfo = stb;
+		};
+		9751DA83CC414140806DBFCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D32569D607514A129169F3CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 674F53DE54F440FAB1E6A9F1;
+			remoteInfo = glfw;
+		};
+		98F2DFB35649464498C13FF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D32569D607514A129169F3CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C8F957FB6744FA8A77A4D5F;
+			remoteInfo = imgui;
+		};
+		D6CCB79812CA448598D65D08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D32569D607514A129169F3CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 674F53DE54F440FAB1E6A9F1;
+			remoteInfo = glfw;
+		};
+		D802091CEDE748ECBBBB210C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D32569D607514A129169F3CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F4F919701454C7D9D41126F;
+			remoteInfo = glew;
+		};
+		D8C7348FD0124C0298B4D3FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D32569D607514A129169F3CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 354EF6EEF2294690A573702B;
+			remoteInfo = base;
+		};
+		E307BDE050374D6E9CA030CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D32569D607514A129169F3CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C8F957FB6744FA8A77A4D5F;
+			remoteInfo = imgui;
+		};
+		FF30BF6580F7458183224790 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D32569D607514A129169F3CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7691A2397E347BD8C51B9D7;
+			remoteInfo = stb;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		001A323CCAEC4E11BA8F778C /* scalar_multiplication.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = scalar_multiplication.hpp; path = ext/glm/gtx/scalar_multiplication.hpp; sourceTree = SOURCE_ROOT; };
+		013B75232B3742C9964CA134 /* matrix_integer.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = matrix_integer.hpp; path = ext/glm/gtc/matrix_integer.hpp; sourceTree = SOURCE_ROOT; };
+		01D722D3973F4403BDD8F248 /* type_mat3x4.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = type_mat3x4.inl; path = ext/glm/detail/type_mat3x4.inl; sourceTree = SOURCE_ROOT; };
+		061647A0BC3549C3A03968BB /* vector_query.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = vector_query.inl; path = ext/glm/gtx/vector_query.inl; sourceTree = SOURCE_ROOT; };
+		092A46D0FA2B43FCB8338B1E /* imconfig.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = imconfig.h; path = ext/imgui/imconfig.h; sourceTree = SOURCE_ROOT; };
+		0A1C48014EC14F138F85F371 /* platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = platform.h; path = ext/glm/simd/platform.h; sourceTree = SOURCE_ROOT; };
+		0AAE4C61EBDE44639B079FEB /* associated_min_max.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = associated_min_max.inl; path = ext/glm/gtx/associated_min_max.inl; sourceTree = SOURCE_ROOT; };
+		0BBA7E4E1F774FA68C7B1806 /* compute_vector_relational.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = compute_vector_relational.hpp; path = ext/glm/detail/compute_vector_relational.hpp; sourceTree = SOURCE_ROOT; };
+		0C74A48723694025BBAF9516 /* mat4x2.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = mat4x2.hpp; path = ext/glm/mat4x2.hpp; sourceTree = SOURCE_ROOT; };
+		0E1060B60C064DAD8B2AA644 /* spline.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = spline.hpp; path = ext/glm/gtx/spline.hpp; sourceTree = SOURCE_ROOT; };
+		0E685ADBD5D04092BFD70C98 /* constants.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = constants.hpp; path = ext/glm/gtc/constants.hpp; sourceTree = SOURCE_ROOT; };
+		0EA8FCE092A74A1081F12693 /* packing.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = packing.h; path = ext/glm/simd/packing.h; sourceTree = SOURCE_ROOT; };
+		0FAC82F571D74A309FE16C73 /* internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = internal.h; path = ext/glfw/src/internal.h; sourceTree = SOURCE_ROOT; };
+		0FB3C390D6104AC6AE582A6E /* transform2.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = transform2.hpp; path = ext/glm/gtx/transform2.hpp; sourceTree = SOURCE_ROOT; };
+		105C2950EAAA446CAB16A467 /* random.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = random.hpp; path = ext/glm/gtc/random.hpp; sourceTree = SOURCE_ROOT; };
+		10B4418037634CB9A0D04226 /* orthonormalize.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = orthonormalize.inl; path = ext/glm/gtx/orthonormalize.inl; sourceTree = SOURCE_ROOT; };
+		111508A4AE494BFFBC105173 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = ext/stb/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		11BDC0198B9848F6A7316C62 /* func_packing.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = func_packing.inl; path = ext/glm/detail/func_packing.inl; sourceTree = SOURCE_ROOT; };
+		11E31FC505E04C6985BFEA65 /* rotate_normalized_axis.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = rotate_normalized_axis.hpp; path = ext/glm/gtx/rotate_normalized_axis.hpp; sourceTree = SOURCE_ROOT; };
+		13A81E0DCB2D48B6A3A35172 /* cgra_geometry.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cgra_geometry.cpp; path = src/cgra/cgra_geometry.cpp; sourceTree = SOURCE_ROOT; };
+		13E31547CD1D420690BA0549 /* precision.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = precision.hpp; path = ext/glm/detail/precision.hpp; sourceTree = SOURCE_ROOT; };
+		1412AED5DDA24905882E2DE1 /* transform.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = transform.hpp; path = ext/glm/gtx/transform.hpp; sourceTree = SOURCE_ROOT; };
+		14C7ECDDA8744B2A888BBD45 /* context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = context.c; path = ext/glfw/src/context.c; sourceTree = SOURCE_ROOT; };
+		15C42F8F18B441CCB6947114 /* type_ptr.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = type_ptr.inl; path = ext/glm/gtc/type_ptr.inl; sourceTree = SOURCE_ROOT; };
+		1602C941759D4595A36AAA03 /* func_integer_simd.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = func_integer_simd.inl; path = ext/glm/detail/func_integer_simd.inl; sourceTree = SOURCE_ROOT; };
+		1670F1ADC8CA48B8B7559AFE /* type_mat4x3.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = type_mat4x3.inl; path = ext/glm/detail/type_mat4x3.inl; sourceTree = SOURCE_ROOT; };
+		1770EFDCE147404097E4A06F /* matrix_access.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = matrix_access.hpp; path = ext/glm/gtc/matrix_access.hpp; sourceTree = SOURCE_ROOT; };
+		177411439B1343FEA6903DF4 /* func_packing_simd.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = func_packing_simd.inl; path = ext/glm/detail/func_packing_simd.inl; sourceTree = SOURCE_ROOT; };
+		17CEFBF412FD48BD9C4A747A /* mixed_product.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = mixed_product.hpp; path = ext/glm/gtx/mixed_product.hpp; sourceTree = SOURCE_ROOT; };
+		17FC37376684408C80D34CB0 /* func_matrix.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = func_matrix.hpp; path = ext/glm/detail/func_matrix.hpp; sourceTree = SOURCE_ROOT; };
+		18079858545D406BA6D0C996 /* mat3x3.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = mat3x3.hpp; path = ext/glm/mat3x3.hpp; sourceTree = SOURCE_ROOT; };
+		1868A9D56C7E47809313B47D /* application.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = application.hpp; path = src/application.hpp; sourceTree = SOURCE_ROOT; };
+		187A1CC3230F485198DE360F /* type_aligned.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = type_aligned.inl; path = ext/glm/gtx/type_aligned.inl; sourceTree = SOURCE_ROOT; };
+		18C1A89EB713429EA6B95508 /* func_vector_relational.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = func_vector_relational.inl; path = ext/glm/detail/func_vector_relational.inl; sourceTree = SOURCE_ROOT; };
+		198F589CF4A74210AF3F128C /* random.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = random.inl; path = ext/glm/gtc/random.inl; sourceTree = SOURCE_ROOT; };
+		19D789FE53804D29994CF4C4 /* extended_min_max.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = extended_min_max.inl; path = ext/glm/gtx/extended_min_max.inl; sourceTree = SOURCE_ROOT; };
+		19EAECCF05F845659EED3BE5 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = ext/glm/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		1A3E106CBF444E8C981F1CD9 /* constants.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = constants.inl; path = ext/glm/gtc/constants.inl; sourceTree = SOURCE_ROOT; };
+		1A7F3BAB2C3D4EE7A00BCC6D /* glm_dummy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = glm_dummy; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AB301BABFD647F5B4C1254F /* number_precision.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = number_precision.hpp; path = ext/glm/gtx/number_precision.hpp; sourceTree = SOURCE_ROOT; };
+		1C2339A0DDDB44C190E51CAE /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = ext/glfw/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		1C7A19FAEFBF46EF94B282C1 /* matrix_factorisation.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = matrix_factorisation.hpp; path = ext/glm/gtx/matrix_factorisation.hpp; sourceTree = SOURCE_ROOT; };
+		1DB7D406E1574FC2A27B01EC /* _swizzle_func.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = _swizzle_func.hpp; path = ext/glm/detail/_swizzle_func.hpp; sourceTree = SOURCE_ROOT; };
+		1E9EEB0468F54DD6BFE5F5E5 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		1EB55ABFE3534F3CA3F1AC2A /* matrix_interpolation.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = matrix_interpolation.hpp; path = ext/glm/gtx/matrix_interpolation.hpp; sourceTree = SOURCE_ROOT; };
+		2091BDE0A7AE450AA7FF77D8 /* mat4x3.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = mat4x3.hpp; path = ext/glm/mat4x3.hpp; sourceTree = SOURCE_ROOT; };
+		20F3678B759444DCB7ABE84F /* glfw3native.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3native.h; path = ext/glfw/include/GLFW/glfw3native.h; sourceTree = SOURCE_ROOT; };
+		214D7E4BD4094C0B890AFE4C /* bit.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = bit.hpp; path = ext/glm/gtx/bit.hpp; sourceTree = SOURCE_ROOT; };
+		2306EC4B9DC2469C9AE6652C /* euler_angles.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = euler_angles.inl; path = ext/glm/gtx/euler_angles.inl; sourceTree = SOURCE_ROOT; };
+		23DE733ED500473A8E27D4CA /* matrix_inverse.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = matrix_inverse.inl; path = ext/glm/gtc/matrix_inverse.inl; sourceTree = SOURCE_ROOT; };
+		23F9342FD8424AEF91114229 /* mat3x4.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = mat3x4.hpp; path = ext/glm/mat3x4.hpp; sourceTree = SOURCE_ROOT; };
+		244A82FAB1E448C5B57B2F7C /* iokit_joystick.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = iokit_joystick.h; path = ext/glfw/src/iokit_joystick.h; sourceTree = SOURCE_ROOT; };
+		244C591CB6BA46D083FFC400 /* common.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = common.hpp; path = ext/glm/gtx/common.hpp; sourceTree = SOURCE_ROOT; };
+		24CB1A9A95BA405CBDAC701E /* type_mat4x2.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = type_mat4x2.inl; path = ext/glm/detail/type_mat4x2.inl; sourceTree = SOURCE_ROOT; };
+		262AD0F8237C4AC996D15E0C /* imgui_internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = imgui_internal.h; path = ext/imgui/imgui_internal.h; sourceTree = SOURCE_ROOT; };
+		2A3AC1776C5B48D399BE72E1 /* glew.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glew.h; path = "ext/glew-1.10.0/include/GL/glew.h"; sourceTree = SOURCE_ROOT; };
+		2A6DC8411EA34C3B9E76F9A6 /* type_trait.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = type_trait.hpp; path = ext/glm/gtx/type_trait.hpp; sourceTree = SOURCE_ROOT; };
+		2A899C15C8DE434FB818DF86 /* cgra_gui.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = cgra_gui.hpp; path = src/cgra/cgra_gui.hpp; sourceTree = SOURCE_ROOT; };
+		2B0061C5DC9F46A9BF0D4136 /* log_base.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = log_base.inl; path = ext/glm/gtx/log_base.inl; sourceTree = SOURCE_ROOT; };
+		2B4AC25770234BF2AF7D28A8 /* imgui.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = imgui.h; path = ext/imgui/imgui.h; sourceTree = SOURCE_ROOT; };
+		2B8C75AD42FB4E3E8E3A21F5 /* float_notmalize.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = float_notmalize.inl; path = ext/glm/gtx/float_notmalize.inl; sourceTree = SOURCE_ROOT; };
+		2BEDF9F26AE94656A2A25C36 /* color_encoding.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = color_encoding.hpp; path = ext/glm/gtx/color_encoding.hpp; sourceTree = SOURCE_ROOT; };
+		2F44139743704917AE07358E /* func_exponential.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = func_exponential.inl; path = ext/glm/detail/func_exponential.inl; sourceTree = SOURCE_ROOT; };
+		2FE351D2A03D43B881DB656E /* vec3.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = vec3.hpp; path = ext/glm/vec3.hpp; sourceTree = SOURCE_ROOT; };
+		301FFBF211B54B2B80C12332 /* euler_angles.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = euler_angles.hpp; path = ext/glm/gtx/euler_angles.hpp; sourceTree = SOURCE_ROOT; };
+		313C4B1F8B8840FEA6610770 /* func_trigonometric.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = func_trigonometric.hpp; path = ext/glm/detail/func_trigonometric.hpp; sourceTree = SOURCE_ROOT; };
+		33425D519056456AA4D572D6 /* type_gentype.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = type_gentype.inl; path = ext/glm/detail/type_gentype.inl; sourceTree = SOURCE_ROOT; };
+		34816241220E41D09254E50F /* std_based_type.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = std_based_type.hpp; path = ext/glm/gtx/std_based_type.hpp; sourceTree = SOURCE_ROOT; };
+		34934B7D262F475CB7CFCDED /* type_float.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = type_float.hpp; path = ext/glm/detail/type_float.hpp; sourceTree = SOURCE_ROOT; };
+		35E040FA701D4B45B66196DF /* normalize_dot.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = normalize_dot.inl; path = ext/glm/gtx/normalize_dot.inl; sourceTree = SOURCE_ROOT; };
+		366DCFE728D147B89B692DF0 /* color_encoding.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = color_encoding.inl; path = ext/glm/gtx/color_encoding.inl; sourceTree = SOURCE_ROOT; };
+		3735C7DD20E543459958BCD0 /* libimgui.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libimgui.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		373B24FEA719499EB3CB29A7 /* string_cast.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = string_cast.hpp; path = ext/glm/gtx/string_cast.hpp; sourceTree = SOURCE_ROOT; };
+		3765B9C9051D45D88B447285 /* color_space.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = color_space.inl; path = ext/glm/gtc/color_space.inl; sourceTree = SOURCE_ROOT; };
+		39B5FE74634E41588C15091D /* noise.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = noise.hpp; path = ext/glm/gtc/noise.hpp; sourceTree = SOURCE_ROOT; };
+		3B4F23C44E244F268AA10974 /* cgra_shader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cgra_shader.cpp; path = src/cgra/cgra_shader.cpp; sourceTree = SOURCE_ROOT; };
+		3B8B934CBF5B4449A6142919 /* type_mat4x2.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = type_mat4x2.hpp; path = ext/glm/detail/type_mat4x2.hpp; sourceTree = SOURCE_ROOT; };
+		3BAA965A179443F7A3DB02EC /* fast_exponential.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = fast_exponential.inl; path = ext/glm/gtx/fast_exponential.inl; sourceTree = SOURCE_ROOT; };
+		3BFB3CB5A59746D3900B893E /* extend.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = extend.inl; path = ext/glm/gtx/extend.inl; sourceTree = SOURCE_ROOT; };
+		3C8C6B7156474D8C9284A3BF /* cgra_gui.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cgra_gui.cpp; path = src/cgra/cgra_gui.cpp; sourceTree = SOURCE_ROOT; };
+		3C9892C6A4144055A6AC75EC /* rotate_normalized_axis.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = rotate_normalized_axis.inl; path = ext/glm/gtx/rotate_normalized_axis.inl; sourceTree = SOURCE_ROOT; };
+		3D3099BC65234F80A7F6F8E0 /* type_trait.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = type_trait.inl; path = ext/glm/gtx/type_trait.inl; sourceTree = SOURCE_ROOT; };
+		406FC2C7A68E4D01B739983E /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		412C3C112D71411EB3F637EE /* quaternion.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = quaternion.hpp; path = ext/glm/gtc/quaternion.hpp; sourceTree = SOURCE_ROOT; };
+		41FCB7FDBB874447A6957952 /* cocoa_platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_platform.h; path = ext/glfw/src/cocoa_platform.h; sourceTree = SOURCE_ROOT; };
+		4352A6EB4D1A435D860554B7 /* packing.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = packing.inl; path = ext/glm/gtc/packing.inl; sourceTree = SOURCE_ROOT; };
+		437F567617D04525A7B8B074 /* cocoa_init.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_init.m; path = ext/glfw/src/cocoa_init.m; sourceTree = SOURCE_ROOT; };
+		449140CD771F4EFEA6533D65 /* bitfield.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = bitfield.inl; path = ext/glm/gtc/bitfield.inl; sourceTree = SOURCE_ROOT; };
+		466D66B338D54924A67D7553 /* func_exponential_simd.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = func_exponential_simd.inl; path = ext/glm/detail/func_exponential_simd.inl; sourceTree = SOURCE_ROOT; };
+		46B58CE93D8247C6AD09A6CE /* projection.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = projection.inl; path = ext/glm/gtx/projection.inl; sourceTree = SOURCE_ROOT; };
+		488DA6D22F0245A0A1A455C9 /* hash.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = hash.inl; path = ext/glm/gtx/hash.inl; sourceTree = SOURCE_ROOT; };
+		491089AE277540A78BB74037 /* geometric.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = geometric.hpp; path = ext/glm/geometric.hpp; sourceTree = SOURCE_ROOT; };
+		4B2B19D85060445296E31FA8 /* func_common_simd.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = func_common_simd.inl; path = ext/glm/detail/func_common_simd.inl; sourceTree = SOURCE_ROOT; };
+		4B500A2A173E4A8EB1A49822 /* cgra_mesh.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cgra_mesh.cpp; path = src/cgra/cgra_mesh.cpp; sourceTree = SOURCE_ROOT; };
+		4B6EA96C76CF4334BABDE173 /* matrix.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = matrix.h; path = ext/glm/simd/matrix.h; sourceTree = SOURCE_ROOT; };
+		4C707FB59DFE45A3B9683BD4 /* type_mat3x3.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = type_mat3x3.inl; path = ext/glm/detail/type_mat3x3.inl; sourceTree = SOURCE_ROOT; };
+		4CAA3CF9D1884E2386A3F6B2 /* polar_coordinates.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = polar_coordinates.hpp; path = ext/glm/gtx/polar_coordinates.hpp; sourceTree = SOURCE_ROOT; };
+		4F31767BB0D04CB1911C2532 /* type_mat4x4.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = type_mat4x4.hpp; path = ext/glm/detail/type_mat4x4.hpp; sourceTree = SOURCE_ROOT; };
+		5013518F5B4E429A8B809682 /* type_mat4x4_simd.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = type_mat4x4_simd.inl; path = ext/glm/detail/type_mat4x4_simd.inl; sourceTree = SOURCE_ROOT; };
+		51675A5B12CF47E4890A8735 /* type_mat3x3.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = type_mat3x3.hpp; path = ext/glm/detail/type_mat3x3.hpp; sourceTree = SOURCE_ROOT; };
+		5173DA1905C4485BA1618AAE /* normal.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = normal.hpp; path = ext/glm/gtx/normal.hpp; sourceTree = SOURCE_ROOT; };
+		51FFE8A6126C4474B68431E7 /* matrix_decompose.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = matrix_decompose.inl; path = ext/glm/gtx/matrix_decompose.inl; sourceTree = SOURCE_ROOT; };
+		566967DECF7B4D659E80C647 /* epsilon.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = epsilon.hpp; path = ext/glm/gtc/epsilon.hpp; sourceTree = SOURCE_ROOT; };
+		5758AA4BCBF64C05B6179387 /* type_mat3x4.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = type_mat3x4.hpp; path = ext/glm/detail/type_mat3x4.hpp; sourceTree = SOURCE_ROOT; };
+		577165179A364D9F983A7378 /* func_integer.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = func_integer.inl; path = ext/glm/detail/func_integer.inl; sourceTree = SOURCE_ROOT; };
+		58DC1489E689471D99DD93F6 /* func_vector_relational_simd.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = func_vector_relational_simd.inl; path = ext/glm/detail/func_vector_relational_simd.inl; sourceTree = SOURCE_ROOT; };
+		590760E4D14841C6A2E5D34E /* matrix_transform_2d.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = matrix_transform_2d.hpp; path = ext/glm/gtx/matrix_transform_2d.hpp; sourceTree = SOURCE_ROOT; };
+		5A3403107D0A4709BB3A1FFE /* raw_data.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = raw_data.hpp; path = ext/glm/gtx/raw_data.hpp; sourceTree = SOURCE_ROOT; };
+		5A3D8752262C47AF99291C0B /* ext.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = ext.hpp; path = ext/glm/ext.hpp; sourceTree = SOURCE_ROOT; };
+		5BA6B9A13C4542FF8509354A /* fast_exponential.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = fast_exponential.hpp; path = ext/glm/gtx/fast_exponential.hpp; sourceTree = SOURCE_ROOT; };
+		5C405644F0BA499B88DF366D /* type_mat4x3.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = type_mat4x3.hpp; path = ext/glm/detail/type_mat4x3.hpp; sourceTree = SOURCE_ROOT; };
+		5D1261C8D21446F7976DB382 /* dummy.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dummy.cpp; path = ext/glm/detail/dummy.cpp; sourceTree = SOURCE_ROOT; };
+		5D92C55A4EDC42EBAC0E752B /* mat4x4.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = mat4x4.hpp; path = ext/glm/mat4x4.hpp; sourceTree = SOURCE_ROOT; };
+		5EE3D647D776413C8B86CB3C /* vector_query.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = vector_query.hpp; path = ext/glm/gtx/vector_query.hpp; sourceTree = SOURCE_ROOT; };
+		5F0C8215ED4249578299CD55 /* type_mat4x4.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = type_mat4x4.inl; path = ext/glm/detail/type_mat4x4.inl; sourceTree = SOURCE_ROOT; };
+		5F192679E8CC4B70B3DB58B0 /* log_base.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = log_base.hpp; path = ext/glm/gtx/log_base.hpp; sourceTree = SOURCE_ROOT; };
+		5F38B1ABF6EC4C64B2A2089F /* matrix_transform.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = matrix_transform.inl; path = ext/glm/gtc/matrix_transform.inl; sourceTree = SOURCE_ROOT; };
+		611CD960EB4849AE8815E78F /* monitor.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = monitor.c; path = ext/glfw/src/monitor.c; sourceTree = SOURCE_ROOT; };
+		637AC47B48BF4008822759DF /* type_vec3.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = type_vec3.inl; path = ext/glm/detail/type_vec3.inl; sourceTree = SOURCE_ROOT; };
+		63AD9418732846F384ACE4AF /* exponential.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = exponential.h; path = ext/glm/simd/exponential.h; sourceTree = SOURCE_ROOT; };
+		63C9D6DBCAF74883905701EE /* mixed_product.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = mixed_product.inl; path = ext/glm/gtx/mixed_product.inl; sourceTree = SOURCE_ROOT; };
+		64B953AEFF9948B2935FBFC9 /* string_cast.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = string_cast.inl; path = ext/glm/gtx/string_cast.inl; sourceTree = SOURCE_ROOT; };
+		656E099A3FAD4F4F9382BCEB /* type_aligned.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = type_aligned.hpp; path = ext/glm/gtc/type_aligned.hpp; sourceTree = SOURCE_ROOT; };
+		65C35BA46F754F9CBCD216F4 /* type_mat2x3.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = type_mat2x3.hpp; path = ext/glm/detail/type_mat2x3.hpp; sourceTree = SOURCE_ROOT; };
+		65DA27F1212749F384796BCD /* cgra_image.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = cgra_image.hpp; path = src/cgra/cgra_image.hpp; sourceTree = SOURCE_ROOT; };
+		6732A742E7284D5780D1EAB0 /* color_space.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = color_space.hpp; path = ext/glm/gtx/color_space.hpp; sourceTree = SOURCE_ROOT; };
+		67C9E529ED6C4144871F6ED5 /* bitfield.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = bitfield.hpp; path = ext/glm/gtc/bitfield.hpp; sourceTree = SOURCE_ROOT; };
+		67DD34F4620045B3BADF3140 /* extend.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = extend.hpp; path = ext/glm/gtx/extend.hpp; sourceTree = SOURCE_ROOT; };
+		68D2F4F130E1483AA03CC07A /* type_precision.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = type_precision.hpp; path = ext/glm/gtc/type_precision.hpp; sourceTree = SOURCE_ROOT; };
+		69E70F5695E24DEB9895B714 /* normalize_dot.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = normalize_dot.hpp; path = ext/glm/gtx/normalize_dot.hpp; sourceTree = SOURCE_ROOT; };
+		6B2CED76DDBA440D96377B9A /* matrix_major_storage.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = matrix_major_storage.inl; path = ext/glm/gtx/matrix_major_storage.inl; sourceTree = SOURCE_ROOT; };
+		6CA686F643A64EAAB3E8FBB8 /* scalar_relational.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = scalar_relational.hpp; path = ext/glm/gtx/scalar_relational.hpp; sourceTree = SOURCE_ROOT; };
+		6E2FDD2A30894352A52B6F59 /* type_vec.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = type_vec.inl; path = ext/glm/detail/type_vec.inl; sourceTree = SOURCE_ROOT; };
+		6E4626AEEA034134B977324A /* trigonometric.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = trigonometric.h; path = ext/glm/simd/trigonometric.h; sourceTree = SOURCE_ROOT; };
+		6E98108549A544789CF77056 /* integer.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = integer.inl; path = ext/glm/gtx/integer.inl; sourceTree = SOURCE_ROOT; };
+		6FD0947982D844B9AE055BC3 /* func_packing.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = func_packing.hpp; path = ext/glm/detail/func_packing.hpp; sourceTree = SOURCE_ROOT; };
+		706C0D32550949DDAA51776E /* packing.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = packing.hpp; path = ext/glm/gtc/packing.hpp; sourceTree = SOURCE_ROOT; };
+		70F549AB31CC4F0FA49995DC /* integer.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = integer.hpp; path = ext/glm/gtc/integer.hpp; sourceTree = SOURCE_ROOT; };
+		717977D4B9AE4642B1B1786D /* _noise.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = _noise.hpp; path = ext/glm/detail/_noise.hpp; sourceTree = SOURCE_ROOT; };
+		72795117540A4FF29604AF83 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		74613744AA5441DBACA8E8C1 /* wrap.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = wrap.hpp; path = ext/glm/gtx/wrap.hpp; sourceTree = SOURCE_ROOT; };
+		78000B0CFE6B4D6CA6D89F49 /* transform2.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = transform2.inl; path = ext/glm/gtx/transform2.inl; sourceTree = SOURCE_ROOT; };
+		7806F2109DB5447AAF89250A /* color_space.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = color_space.inl; path = ext/glm/gtx/color_space.inl; sourceTree = SOURCE_ROOT; };
+		788488E048AF4DACBA6ECFA5 /* cgra_wavefront.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = cgra_wavefront.hpp; path = src/cgra/cgra_wavefront.hpp; sourceTree = SOURCE_ROOT; };
+		79085DFC0CF54BEE87858113 /* mach_time.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = mach_time.c; path = ext/glfw/src/mach_time.c; sourceTree = SOURCE_ROOT; };
+		79B6006C00C947238681CF43 /* type_vec.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = type_vec.hpp; path = ext/glm/detail/type_vec.hpp; sourceTree = SOURCE_ROOT; };
+		7B27C8FB7DDD4C5986CED4DC /* common.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = common.hpp; path = ext/glm/common.hpp; sourceTree = SOURCE_ROOT; };
+		7B2C3F7907044FD0952FE0AD /* type_mat2x4.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = type_mat2x4.hpp; path = ext/glm/detail/type_mat2x4.hpp; sourceTree = SOURCE_ROOT; };
+		7BBE004AE6D24A65A2AA6E97 /* func_matrix_simd.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = func_matrix_simd.inl; path = ext/glm/detail/func_matrix_simd.inl; sourceTree = SOURCE_ROOT; };
+		7BE773F8228C48A6B3BCD371 /* integer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = integer.h; path = ext/glm/simd/integer.h; sourceTree = SOURCE_ROOT; };
+		7CA76018A5BC47D5B95170CC /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = res/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		7CFF58DC5D7641A09C96FDB4 /* cgra_geometry.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = cgra_geometry.hpp; path = src/cgra/cgra_geometry.hpp; sourceTree = SOURCE_ROOT; };
+		7DCED274C87641A08CECFDD7 /* color_space_YCoCg.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = color_space_YCoCg.inl; path = ext/glm/gtx/color_space_YCoCg.inl; sourceTree = SOURCE_ROOT; };
+		7E3F227CB3524902A0A37918 /* reciprocal.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = reciprocal.inl; path = ext/glm/gtc/reciprocal.inl; sourceTree = SOURCE_ROOT; };
+		7E4C7074208846D7AA11E001 /* exterior_product.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = exterior_product.inl; path = ext/glm/gtx/exterior_product.inl; sourceTree = SOURCE_ROOT; };
+		7E86C9D57BAE44BE80991A3B /* _vectorize.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = _vectorize.hpp; path = ext/glm/detail/_vectorize.hpp; sourceTree = SOURCE_ROOT; };
+		80370A611A7341DAA13A61C9 /* color_space_YCoCg.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = color_space_YCoCg.hpp; path = ext/glm/gtx/color_space_YCoCg.hpp; sourceTree = SOURCE_ROOT; };
+		80EE2A867C2E4841A6D05BD5 /* perpendicular.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = perpendicular.inl; path = ext/glm/gtx/perpendicular.inl; sourceTree = SOURCE_ROOT; };
+		8170A75D6ED44219A9BE25D5 /* mat2x2.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = mat2x2.hpp; path = ext/glm/mat2x2.hpp; sourceTree = SOURCE_ROOT; };
+		8198419D165E4FF0878D938E /* type_vec4.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = type_vec4.hpp; path = ext/glm/detail/type_vec4.hpp; sourceTree = SOURCE_ROOT; };
+		83A5A20E1CDC4338888142B1 /* range.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = range.hpp; path = ext/glm/gtx/range.hpp; sourceTree = SOURCE_ROOT; };
+		85A587EE6A984E5D95D59BC9 /* type_vec2.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = type_vec2.inl; path = ext/glm/detail/type_vec2.inl; sourceTree = SOURCE_ROOT; };
+		85B4B656140D48AEAAEBDCC9 /* vector_relational.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = vector_relational.h; path = ext/glm/simd/vector_relational.h; sourceTree = SOURCE_ROOT; };
+		87189F3E934147EB9D636889 /* transform.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = transform.inl; path = ext/glm/gtx/transform.inl; sourceTree = SOURCE_ROOT; };
+		879F60AF55F4424F81C7793B /* imgui_draw.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_draw.cpp; path = ext/imgui/imgui_draw.cpp; sourceTree = SOURCE_ROOT; };
+		884E1C32616848F3872B8C2C /* raw_data.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = raw_data.inl; path = ext/glm/gtx/raw_data.inl; sourceTree = SOURCE_ROOT; };
+		889DAA27EFD2499C9F26C4B9 /* type_vec1.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = type_vec1.inl; path = ext/glm/detail/type_vec1.inl; sourceTree = SOURCE_ROOT; };
+		88AD8142341744BAB4D20A20 /* normal.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = normal.inl; path = ext/glm/gtx/normal.inl; sourceTree = SOURCE_ROOT; };
+		88BDEC341FF642A8874DD3C5 /* handed_coordinate_space.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = handed_coordinate_space.inl; path = ext/glm/gtx/handed_coordinate_space.inl; sourceTree = SOURCE_ROOT; };
+		88D2F54AF9434AF2B353432C /* quaternion.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = quaternion.hpp; path = ext/glm/gtx/quaternion.hpp; sourceTree = SOURCE_ROOT; };
+		89A3B7AD587A4186BB49FD43 /* quaternion.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = quaternion.inl; path = ext/glm/gtx/quaternion.inl; sourceTree = SOURCE_ROOT; };
+		8A884BB363344ECE86802D4F /* nsgl_context.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = nsgl_context.m; path = ext/glfw/src/nsgl_context.m; sourceTree = SOURCE_ROOT; };
+		8BA10BCA538E4519944F99A9 /* libstb.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libstb.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C55BA183A78414E910A77C9 /* wglew.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = wglew.h; path = "ext/glew-1.10.0/include/GL/wglew.h"; sourceTree = SOURCE_ROOT; };
+		8CC7A6A00800402CB69BF841 /* type_mat2x4.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = type_mat2x4.inl; path = ext/glm/detail/type_mat2x4.inl; sourceTree = SOURCE_ROOT; };
+		8D5F0A58CEC84126A9C558DF /* vec1.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = vec1.hpp; path = ext/glm/gtc/vec1.hpp; sourceTree = SOURCE_ROOT; };
+		8D8FA26DFF9D47C5B123F6C2 /* glm.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = glm.hpp; path = ext/glm/glm.hpp; sourceTree = SOURCE_ROOT; };
+		8DCE470D0424472BBE2285D8 /* vector_relational.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = vector_relational.hpp; path = ext/glm/vector_relational.hpp; sourceTree = SOURCE_ROOT; };
+		8E9A00D5E4A943AC96A825CF /* color_space.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = color_space.hpp; path = ext/glm/gtc/color_space.hpp; sourceTree = SOURCE_ROOT; };
+		8EF34AAC96954DBFA3C07242 /* _swizzle.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = _swizzle.hpp; path = ext/glm/detail/_swizzle.hpp; sourceTree = SOURCE_ROOT; };
+		8F48973DCE6A4B78A03CA8A0 /* imgui_demo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_demo.cpp; path = ext/imgui/imgui_demo.cpp; sourceTree = SOURCE_ROOT; };
+		9098A291BF5C4541BA0F7DE2 /* imgui.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui.cpp; path = ext/imgui/imgui.cpp; sourceTree = SOURCE_ROOT; };
+		91840BC92128419F90D68D3F /* func_common.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = func_common.inl; path = ext/glm/detail/func_common.inl; sourceTree = SOURCE_ROOT; };
+		91DE49BADCE6431FB03A022B /* type_gentype.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = type_gentype.hpp; path = ext/glm/detail/type_gentype.hpp; sourceTree = SOURCE_ROOT; };
+		91F82BB7500F48EF9C7E2CCA /* component_wise.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = component_wise.hpp; path = ext/glm/gtx/component_wise.hpp; sourceTree = SOURCE_ROOT; };
+		930261FDD0E84A32AA94B00C /* application.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = application.cpp; path = src/application.cpp; sourceTree = SOURCE_ROOT; };
+		955D56801B5B483BA7ADBA56 /* associated_min_max.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = associated_min_max.hpp; path = ext/glm/gtx/associated_min_max.hpp; sourceTree = SOURCE_ROOT; };
+		958F69D72CC949F59260B1A1 /* projection.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = projection.hpp; path = ext/glm/gtx/projection.hpp; sourceTree = SOURCE_ROOT; };
+		96BADD209B224B7A9E70996A /* type_precision.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = type_precision.inl; path = ext/glm/gtc/type_precision.inl; sourceTree = SOURCE_ROOT; };
+		96FA896A29D441668396E95F /* integer.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = integer.hpp; path = ext/glm/gtx/integer.hpp; sourceTree = SOURCE_ROOT; };
+		97FCF928224A495C8465EF2F /* vec1.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = vec1.inl; path = ext/glm/gtc/vec1.inl; sourceTree = SOURCE_ROOT; };
+		9914DA112E754A5F952D07DB /* gradient_paint.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = gradient_paint.inl; path = ext/glm/gtx/gradient_paint.inl; sourceTree = SOURCE_ROOT; };
+		992A8C506B794E27BB511A0E /* dual_quaternion.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = dual_quaternion.inl; path = ext/glm/gtx/dual_quaternion.inl; sourceTree = SOURCE_ROOT; };
+		99B24F8342644AA9AF18684D /* common.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = common.inl; path = ext/glm/gtx/common.inl; sourceTree = SOURCE_ROOT; };
+		99D419CB3EE342018D8784A0 /* fast_square_root.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = fast_square_root.hpp; path = ext/glm/gtx/fast_square_root.hpp; sourceTree = SOURCE_ROOT; };
+		9AAC4714FDD14C399F664F6D /* matrix_query.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = matrix_query.inl; path = ext/glm/gtx/matrix_query.inl; sourceTree = SOURCE_ROOT; };
+		9B4C08BEE1BB4F6FB98E179C /* init.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = init.c; path = ext/glfw/src/init.c; sourceTree = SOURCE_ROOT; };
+		9BE771E422364E2C9FEB6294 /* vec_swizzle.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = vec_swizzle.hpp; path = ext/glm/gtx/vec_swizzle.hpp; sourceTree = SOURCE_ROOT; };
+		9C121A11F5614A6BA78F7C81 /* posix_tls.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = posix_tls.c; path = ext/glfw/src/posix_tls.c; sourceTree = SOURCE_ROOT; };
+		9C9D4C5B43474423B2A98B0C /* setup.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = setup.hpp; path = ext/glm/detail/setup.hpp; sourceTree = SOURCE_ROOT; };
+		9CC664A8FAAF456EBB6EA50C /* bit.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = bit.inl; path = ext/glm/gtx/bit.inl; sourceTree = SOURCE_ROOT; };
+		9D4C0F68356B4202BE75F47E /* type_aligned.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = type_aligned.hpp; path = ext/glm/gtx/type_aligned.hpp; sourceTree = SOURCE_ROOT; };
+		9DE21884B8B64539918BBD00 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = ext/glfw/src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		9DF678E61CA449F2837BC72E /* type_mat2x2.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = type_mat2x2.inl; path = ext/glm/detail/type_mat2x2.inl; sourceTree = SOURCE_ROOT; };
+		9E335BA9F3FE412A81C834D9 /* glm.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = glm.cpp; path = ext/glm/detail/glm.cpp; sourceTree = SOURCE_ROOT; };
+		9F4B8C0FCF1F47F285D784B4 /* spline.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = spline.inl; path = ext/glm/gtx/spline.inl; sourceTree = SOURCE_ROOT; };
+		A0049EEFBD3F4FBC84FA2657 /* glfw3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3.h; path = ext/glfw/include/GLFW/glfw3.h; sourceTree = SOURCE_ROOT; };
+		A0CDA3C4EA9D45F0A8CEED67 /* orthonormalize.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = orthonormalize.hpp; path = ext/glm/gtx/orthonormalize.hpp; sourceTree = SOURCE_ROOT; };
+		A14B7A2C2465430C93F20C0B /* vec4.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = vec4.hpp; path = ext/glm/vec4.hpp; sourceTree = SOURCE_ROOT; };
+		A1ECAAC6B7A645BA81D46191 /* number_precision.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = number_precision.inl; path = ext/glm/gtx/number_precision.inl; sourceTree = SOURCE_ROOT; };
+		A27B8F91C62C4007BF135309 /* quaternion_simd.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = quaternion_simd.inl; path = ext/glm/gtc/quaternion_simd.inl; sourceTree = SOURCE_ROOT; };
+		A3624BDA395F4A5E8E9A7A7E /* type_half.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = type_half.inl; path = ext/glm/detail/type_half.inl; sourceTree = SOURCE_ROOT; };
+		A4BE0AEA4FEC4B619EE004E1 /* optimum_pow.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = optimum_pow.hpp; path = ext/glm/gtx/optimum_pow.hpp; sourceTree = SOURCE_ROOT; };
+		A4C1023C486743CDB71E30D7 /* matrix_access.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = matrix_access.inl; path = ext/glm/gtc/matrix_access.inl; sourceTree = SOURCE_ROOT; };
+		A4C4D0EDA93F4D26B0DCF860 /* intersect.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = intersect.hpp; path = ext/glm/gtx/intersect.hpp; sourceTree = SOURCE_ROOT; };
+		A5435BB1E31D4C378B39AA56 /* matrix_factorisation.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = matrix_factorisation.inl; path = ext/glm/gtx/matrix_factorisation.inl; sourceTree = SOURCE_ROOT; };
+		A636A7BDFFBE4093AC776262 /* std_based_type.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = std_based_type.inl; path = ext/glm/gtx/std_based_type.inl; sourceTree = SOURCE_ROOT; };
+		A7DA248741F348CAA03BE743 /* intersect.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = intersect.inl; path = ext/glm/gtx/intersect.inl; sourceTree = SOURCE_ROOT; };
+		A7DD73B36A244047A1FB0D4F /* polar_coordinates.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = polar_coordinates.inl; path = ext/glm/gtx/polar_coordinates.inl; sourceTree = SOURCE_ROOT; };
+		A7F5797BED064CE39899834F /* noise.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = noise.inl; path = ext/glm/gtc/noise.inl; sourceTree = SOURCE_ROOT; };
+		A925B9D626E744949C21CA42 /* extended_min_max.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = extended_min_max.hpp; path = ext/glm/gtx/extended_min_max.hpp; sourceTree = SOURCE_ROOT; };
+		AAFC9B6B6E4549C5B1553588 /* func_exponential.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = func_exponential.hpp; path = ext/glm/detail/func_exponential.hpp; sourceTree = SOURCE_ROOT; };
+		ABECFD30FC1F42B092A6437A /* matrix_interpolation.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = matrix_interpolation.inl; path = ext/glm/gtx/matrix_interpolation.inl; sourceTree = SOURCE_ROOT; };
+		ACFEB311FB4548F7A6E8B738 /* func_common.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = func_common.hpp; path = ext/glm/detail/func_common.hpp; sourceTree = SOURCE_ROOT; };
+		AD5E604048534042AA7BEBA9 /* handed_coordinate_space.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = handed_coordinate_space.hpp; path = ext/glm/gtx/handed_coordinate_space.hpp; sourceTree = SOURCE_ROOT; };
+		AEDDB16B51C04DC8AD05CE25 /* cocoa_window.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_window.m; path = ext/glfw/src/cocoa_window.m; sourceTree = SOURCE_ROOT; };
+		B0E843AB70C64AF182C2C5E3 /* base */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = base; sourceTree = BUILT_PRODUCTS_DIR; };
+		B101F308FD72477CA97AAA1C /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = "ext/glew-1.10.0/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+		B12A0E5E362946DF82CAF434 /* vec2.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = vec2.hpp; path = ext/glm/vec2.hpp; sourceTree = SOURCE_ROOT; };
+		B1B0110B2D8C4054AC83DC6E /* scalar_relational.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = scalar_relational.inl; path = ext/glm/gtx/scalar_relational.inl; sourceTree = SOURCE_ROOT; };
+		B4200F4701E7443AB93AC7A7 /* io.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = io.hpp; path = ext/glm/gtx/io.hpp; sourceTree = SOURCE_ROOT; };
+		B70DD68192C948BF85DDEB6F /* matrix_inverse.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = matrix_inverse.hpp; path = ext/glm/gtc/matrix_inverse.hpp; sourceTree = SOURCE_ROOT; };
+		B807F5AE29714BC0BEBED7E9 /* perpendicular.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = perpendicular.hpp; path = ext/glm/gtx/perpendicular.hpp; sourceTree = SOURCE_ROOT; };
+		B8218391E8FE4FA1ABFCEBD5 /* epsilon.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = epsilon.inl; path = ext/glm/gtc/epsilon.inl; sourceTree = SOURCE_ROOT; };
+		B9765FF938294C11A0B0BDB7 /* posix_tls.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = posix_tls.h; path = ext/glfw/src/posix_tls.h; sourceTree = SOURCE_ROOT; };
+		B9A58E6A78924365950CC9B3 /* closest_point.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = closest_point.inl; path = ext/glm/gtx/closest_point.inl; sourceTree = SOURCE_ROOT; };
+		B9F337041DA04B9D9347E75E /* matrix_decompose.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = matrix_decompose.hpp; path = ext/glm/gtx/matrix_decompose.hpp; sourceTree = SOURCE_ROOT; };
+		BA3728659B55447EB143BE66 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = ext/imgui/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		BB974A2D96F048BDA54880A3 /* type_mat2x2.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = type_mat2x2.hpp; path = ext/glm/detail/type_mat2x2.hpp; sourceTree = SOURCE_ROOT; };
+		BC997198693944C997FC7CAE /* opengl.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = opengl.hpp; path = src/opengl.hpp; sourceTree = SOURCE_ROOT; };
+		BE152DA0D93D4C4F999B1D42 /* type_vec2.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = type_vec2.hpp; path = ext/glm/detail/type_vec2.hpp; sourceTree = SOURCE_ROOT; };
+		BE40B32427E0489CB60F76A8 /* reciprocal.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = reciprocal.hpp; path = ext/glm/gtc/reciprocal.hpp; sourceTree = SOURCE_ROOT; };
+		BE653548C6984292BB477063 /* ulp.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = ulp.inl; path = ext/glm/gtc/ulp.inl; sourceTree = SOURCE_ROOT; };
+		BE810F4F350B4BB4AC41935F /* common.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = common.h; path = ext/glm/simd/common.h; sourceTree = SOURCE_ROOT; };
+		BF513CDD3D9F4F43B76457C2 /* functions.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = functions.hpp; path = ext/glm/gtc/functions.hpp; sourceTree = SOURCE_ROOT; };
+		C09971B85C874FB7BF806FF5 /* closest_point.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = closest_point.hpp; path = ext/glm/gtx/closest_point.hpp; sourceTree = SOURCE_ROOT; };
+		C110A6E5C7D44FECA622F7FE /* trigonometric.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = trigonometric.hpp; path = ext/glm/trigonometric.hpp; sourceTree = SOURCE_ROOT; };
+		C24BEA17BD894F059A87B9E7 /* quaternion.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = quaternion.inl; path = ext/glm/gtc/quaternion.inl; sourceTree = SOURCE_ROOT; };
+		C26F8C4332F84BAEB08272E1 /* input.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = input.c; path = ext/glfw/src/input.c; sourceTree = SOURCE_ROOT; };
+		C48AAF9054814B938AF00A86 /* matrix_operation.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = matrix_operation.inl; path = ext/glm/gtx/matrix_operation.inl; sourceTree = SOURCE_ROOT; };
+		C4ED8C340FCF4B24A1A1687E /* type_vec1.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = type_vec1.hpp; path = ext/glm/detail/type_vec1.hpp; sourceTree = SOURCE_ROOT; };
+		C5223AFFABEE46529BE5B1FC /* cgra_shader.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = cgra_shader.hpp; path = src/cgra/cgra_shader.hpp; sourceTree = SOURCE_ROOT; };
+		C53B6430D612423689AEB207 /* packing.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = packing.hpp; path = ext/glm/packing.hpp; sourceTree = SOURCE_ROOT; };
+		C5FDA522F3524E7EA3BDD4C8 /* optimum_pow.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = optimum_pow.inl; path = ext/glm/gtx/optimum_pow.inl; sourceTree = SOURCE_ROOT; };
+		C610DD63FD2744DDA283774A /* vector_angle.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = vector_angle.inl; path = ext/glm/gtx/vector_angle.inl; sourceTree = SOURCE_ROOT; };
+		C67015E8BECF428F8B152593 /* mat2x3.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = mat2x3.hpp; path = ext/glm/mat2x3.hpp; sourceTree = SOURCE_ROOT; };
+		C77F941DD7AB41A9B3D186C5 /* norm.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = norm.hpp; path = ext/glm/gtx/norm.hpp; sourceTree = SOURCE_ROOT; };
+		C86E0F1171964C238060EC80 /* matrix_transform.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = matrix_transform.hpp; path = ext/glm/gtc/matrix_transform.hpp; sourceTree = SOURCE_ROOT; };
+		CAB08FB2FC2A42A5A2F413EB /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/cgra/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		CB78BA34914149A59648AE19 /* type_mat.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = type_mat.hpp; path = ext/glm/detail/type_mat.hpp; sourceTree = SOURCE_ROOT; };
+		CC324090A0A340CEA4BCDB4C /* func_trigonometric_simd.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = func_trigonometric_simd.inl; path = ext/glm/detail/func_trigonometric_simd.inl; sourceTree = SOURCE_ROOT; };
+		CC8BC35D80A3488B923431C9 /* fast_trigonometry.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = fast_trigonometry.hpp; path = ext/glm/gtx/fast_trigonometry.hpp; sourceTree = SOURCE_ROOT; };
+		CD50AB67AE1B48F18ADED18B /* fast_trigonometry.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = fast_trigonometry.inl; path = ext/glm/gtx/fast_trigonometry.inl; sourceTree = SOURCE_ROOT; };
+		CE70E9578DB24FE28B048712 /* cgra_mesh.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = cgra_mesh.hpp; path = src/cgra/cgra_mesh.hpp; sourceTree = SOURCE_ROOT; };
+		CF8353F9E92549EB8FF564CD /* mat2x4.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = mat2x4.hpp; path = ext/glm/mat2x4.hpp; sourceTree = SOURCE_ROOT; };
+		CF84CDEC095B46138520D08D /* func_matrix.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = func_matrix.inl; path = ext/glm/detail/func_matrix.inl; sourceTree = SOURCE_ROOT; };
+		CFB407ECDB8E487689DA0285 /* fast_square_root.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = fast_square_root.inl; path = ext/glm/gtx/fast_square_root.inl; sourceTree = SOURCE_ROOT; };
+		D04BEBABE8CC42309F8A2DA2 /* type_mat2x3.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = type_mat2x3.inl; path = ext/glm/detail/type_mat2x3.inl; sourceTree = SOURCE_ROOT; };
+		D15F7EA4062546FFB826CA6F /* matrix_major_storage.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = matrix_major_storage.hpp; path = ext/glm/gtx/matrix_major_storage.hpp; sourceTree = SOURCE_ROOT; };
+		D1698AEDD0BE43F4B15AE4D5 /* stb.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = stb.c; path = ext/stb/stb.c; sourceTree = SOURCE_ROOT; };
+		D37E121114444ECDBDEB3D4F /* _features.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = _features.hpp; path = ext/glm/detail/_features.hpp; sourceTree = SOURCE_ROOT; };
+		D4387CAAF4A54E3C9613BEFE /* wrap.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = wrap.inl; path = ext/glm/gtx/wrap.inl; sourceTree = SOURCE_ROOT; };
+		D52DBCE4EED2443489F29DC6 /* _fixes.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = _fixes.hpp; path = ext/glm/detail/_fixes.hpp; sourceTree = SOURCE_ROOT; };
+		D63E37D9C23C4D59902BD705 /* compatibility.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = compatibility.hpp; path = ext/glm/gtx/compatibility.hpp; sourceTree = SOURCE_ROOT; };
+		D861F1C09E02480AA0CA6AC6 /* type_mat.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = type_mat.inl; path = ext/glm/detail/type_mat.inl; sourceTree = SOURCE_ROOT; };
+		D8AC0F4EC8B141008CD337CA /* type_mat3x2.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = type_mat3x2.hpp; path = ext/glm/detail/type_mat3x2.hpp; sourceTree = SOURCE_ROOT; };
+		D904C047F977458897E5001B /* glxew.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glxew.h; path = "ext/glew-1.10.0/include/GL/glxew.h"; sourceTree = SOURCE_ROOT; };
+		DB38F092B39B43ACA5BC5665 /* matrix_operation.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = matrix_operation.hpp; path = ext/glm/gtx/matrix_operation.hpp; sourceTree = SOURCE_ROOT; };
+		DBD82F74603E4AE8AE1F08AA /* type_vec3.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = type_vec3.hpp; path = ext/glm/detail/type_vec3.hpp; sourceTree = SOURCE_ROOT; };
+		DC8D64A8A69C4D84A98D315D /* matrix_cross_product.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = matrix_cross_product.inl; path = ext/glm/gtx/matrix_cross_product.inl; sourceTree = SOURCE_ROOT; };
+		DD7F8B484C644D85A82FB9FD /* iokit_joystick.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = iokit_joystick.m; path = ext/glfw/src/iokit_joystick.m; sourceTree = SOURCE_ROOT; };
+		DF38E3CF50794B8785FD1A39 /* exterior_product.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = exterior_product.hpp; path = ext/glm/gtx/exterior_product.hpp; sourceTree = SOURCE_ROOT; };
+		E0197825F5294B628EFD1EAA /* norm.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = norm.inl; path = ext/glm/gtx/norm.inl; sourceTree = SOURCE_ROOT; };
+		E03BADFBC75A4D9A8A084802 /* glfw_config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw_config.h; path = ../build/ext/glfw/src/glfw_config.h; sourceTree = SOURCE_ROOT; };
+		E55492370FCF408B83ADD4F9 /* matrix.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = matrix.hpp; path = ext/glm/matrix.hpp; sourceTree = SOURCE_ROOT; };
+		E612A3A93E95462CB83DC424 /* hash.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = hash.hpp; path = ext/glm/gtx/hash.hpp; sourceTree = SOURCE_ROOT; };
+		E64EFF31F3074C72A818B772 /* integer.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = integer.hpp; path = ext/glm/integer.hpp; sourceTree = SOURCE_ROOT; };
+		E74696E8A65E4DFB88BDFDFF /* func_geometric.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = func_geometric.inl; path = ext/glm/detail/func_geometric.inl; sourceTree = SOURCE_ROOT; };
+		E77D06CC62AE4F43A07082B0 /* matrix_transform_2d.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = matrix_transform_2d.inl; path = ext/glm/gtx/matrix_transform_2d.inl; sourceTree = SOURCE_ROOT; };
+		E77EAC0B0CCD4FBB91B20E62 /* gradient_paint.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = gradient_paint.hpp; path = ext/glm/gtx/gradient_paint.hpp; sourceTree = SOURCE_ROOT; };
+		E8352D66B3BC42BD8FD0E78D /* fwd.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = fwd.hpp; path = ext/glm/fwd.hpp; sourceTree = SOURCE_ROOT; };
+		E9CB912E0386433AB0EFB99D /* type_ptr.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = type_ptr.hpp; path = ext/glm/gtc/type_ptr.hpp; sourceTree = SOURCE_ROOT; };
+		E9F401A9D79247AABCC6CA71 /* type_vec4_simd.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = type_vec4_simd.inl; path = ext/glm/detail/type_vec4_simd.inl; sourceTree = SOURCE_ROOT; };
+		EA6B36348DFA4E309898CD0C /* round.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = round.inl; path = ext/glm/gtc/round.inl; sourceTree = SOURCE_ROOT; };
+		EB4506FCAEFF4FA587ED8ABE /* ulp.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = ulp.hpp; path = ext/glm/gtc/ulp.hpp; sourceTree = SOURCE_ROOT; };
+		EC563075DC8D436A94FDE37E /* type_mat3x2.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = type_mat3x2.inl; path = ext/glm/detail/type_mat3x2.inl; sourceTree = SOURCE_ROOT; };
+		EC5B5CE05AB048468C6B0CA7 /* glew.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glew.c; path = "ext/glew-1.10.0/src/glew.c"; sourceTree = SOURCE_ROOT; };
+		ED5E5AF9E49A487FB427DC17 /* libglew.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglew.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE21030D3F48420EA311F503 /* cocoa_monitor.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_monitor.m; path = ext/glfw/src/cocoa_monitor.m; sourceTree = SOURCE_ROOT; };
+		EE3B8C3ADCEB4B6683765BD9 /* vector_angle.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = vector_angle.hpp; path = ext/glm/gtx/vector_angle.hpp; sourceTree = SOURCE_ROOT; };
+		EEF22CC5407442D08AF9B921 /* type_half.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = type_half.hpp; path = ext/glm/detail/type_half.hpp; sourceTree = SOURCE_ROOT; };
+		EF1DBFF6C8B7489BB2226A34 /* dual_quaternion.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = dual_quaternion.hpp; path = ext/glm/gtx/dual_quaternion.hpp; sourceTree = SOURCE_ROOT; };
+		F0E2A69322B06ED800A2B730 /* cgra_shadows.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cgra_shadows.cpp; path = src/cgra/cgra_shadows.cpp; sourceTree = "<group>"; };
+		F0E2A69422B06ED800A2B730 /* cgra_shadows.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = cgra_shadows.hpp; path = src/cgra/cgra_shadows.hpp; sourceTree = "<group>"; };
+		F11234CB3FB442D1B1A85356 /* component_wise.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = component_wise.inl; path = ext/glm/gtx/component_wise.inl; sourceTree = SOURCE_ROOT; };
+		F1128EA40CBD4644835D2C59 /* integer.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = integer.inl; path = ext/glm/gtc/integer.inl; sourceTree = SOURCE_ROOT; };
+		F15B233540874209AA4A1353 /* geometric.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = geometric.h; path = ext/glm/simd/geometric.h; sourceTree = SOURCE_ROOT; };
+		F33112409F7F4FEABF63CA66 /* func_trigonometric.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = func_trigonometric.inl; path = ext/glm/detail/func_trigonometric.inl; sourceTree = SOURCE_ROOT; };
+		F407F4031D6F46678C73463C /* rotate_vector.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = rotate_vector.inl; path = ext/glm/gtx/rotate_vector.inl; sourceTree = SOURCE_ROOT; };
+		F44EB1D43FD24C7497AE6B93 /* func_geometric.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = func_geometric.hpp; path = ext/glm/detail/func_geometric.hpp; sourceTree = SOURCE_ROOT; };
+		F48C83DE39A946C49FF76578 /* func_integer.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = func_integer.hpp; path = ext/glm/detail/func_integer.hpp; sourceTree = SOURCE_ROOT; };
+		F4B301E90EEA4E39A583902D /* exponential.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = exponential.hpp; path = ext/glm/exponential.hpp; sourceTree = SOURCE_ROOT; };
+		F5542ECBA4B64581B8734014 /* functions.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = functions.inl; path = ext/glm/gtc/functions.inl; sourceTree = SOURCE_ROOT; };
+		F5B27284C4C140F286E3F7E8 /* rotate_vector.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = rotate_vector.hpp; path = ext/glm/gtx/rotate_vector.hpp; sourceTree = SOURCE_ROOT; };
+		F657DC1A8E5A4FA1A81B3F1F /* type_vec4.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = type_vec4.inl; path = ext/glm/detail/type_vec4.inl; sourceTree = SOURCE_ROOT; };
+		F8A25D96148C4ADEB692D52C /* matrix_cross_product.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = matrix_cross_product.hpp; path = ext/glm/gtx/matrix_cross_product.hpp; sourceTree = SOURCE_ROOT; };
+		F901E44F252C43D2B37B7F8B /* libglfw3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglfw3.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F90DF0E1B5DB47E0B717D0BF /* type_int.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = type_int.hpp; path = ext/glm/detail/type_int.hpp; sourceTree = SOURCE_ROOT; };
+		F964AB74966E4770B2BDCBBE /* round.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = round.hpp; path = ext/glm/gtc/round.hpp; sourceTree = SOURCE_ROOT; };
+		F9C582F334ED46C883E3AFC8 /* nsgl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = nsgl_context.h; path = ext/glfw/src/nsgl_context.h; sourceTree = SOURCE_ROOT; };
+		FC111B9A3A5E4BA6B4089F05 /* matrix_query.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = matrix_query.hpp; path = ext/glm/gtx/matrix_query.hpp; sourceTree = SOURCE_ROOT; };
+		FC69183AEB36499883608149 /* func_geometric_simd.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = func_geometric_simd.inl; path = ext/glm/detail/func_geometric_simd.inl; sourceTree = SOURCE_ROOT; };
+		FCB760F19C824D43AC5AC776 /* mat3x2.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = mat3x2.hpp; path = ext/glm/mat3x2.hpp; sourceTree = SOURCE_ROOT; };
+		FDA29BB1AEFD416C95249BBA /* compatibility.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = compatibility.inl; path = ext/glm/gtx/compatibility.inl; sourceTree = SOURCE_ROOT; };
+		FEEF2B43F1B64D6FA0AD52EC /* io.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = io.inl; path = ext/glm/gtx/io.inl; sourceTree = SOURCE_ROOT; };
+		FF89502E91F6462ABCFDDAF8 /* func_vector_relational.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = func_vector_relational.hpp; path = ext/glm/detail/func_vector_relational.hpp; sourceTree = SOURCE_ROOT; };
+		FFBE8BB06B8D498E92DE2EA4 /* window.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = window.c; path = ext/glfw/src/window.c; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		013647F2633B4F669C9ADBD7 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				7F770B5FB3454277804AD192 /* CMake Rules */,
+				72795117540A4FF29604AF83 /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		0454D877EDC44F4E9B3EA831 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC5B5CE05AB048468C6B0CA7 /* glew.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		1E499263D69644A28ECE5DB2 /* glfw */ = {
+			isa = PBXGroup;
+			children = (
+				1E4F72AF46DF432F853CC0C9 /* Source Files */,
+				4D9FB3A16C0D48608E9E335D /* Header Files */,
+				9DE21884B8B64539918BBD00 /* CMakeLists.txt */,
+			);
+			name = glfw;
+			sourceTree = "<group>";
+		};
+		1E4F72AF46DF432F853CC0C9 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				437F567617D04525A7B8B074 /* cocoa_init.m */,
+				EE21030D3F48420EA311F503 /* cocoa_monitor.m */,
+				AEDDB16B51C04DC8AD05CE25 /* cocoa_window.m */,
+				14C7ECDDA8744B2A888BBD45 /* context.c */,
+				9B4C08BEE1BB4F6FB98E179C /* init.c */,
+				C26F8C4332F84BAEB08272E1 /* input.c */,
+				DD7F8B484C644D85A82FB9FD /* iokit_joystick.m */,
+				79085DFC0CF54BEE87858113 /* mach_time.c */,
+				611CD960EB4849AE8815E78F /* monitor.c */,
+				8A884BB363344ECE86802D4F /* nsgl_context.m */,
+				9C121A11F5614A6BA78F7C81 /* posix_tls.c */,
+				FFBE8BB06B8D498E92DE2EA4 /* window.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		230906F7A9AC4E328FA645CB /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				9098A291BF5C4541BA0F7DE2 /* imgui.cpp */,
+				8F48973DCE6A4B78A03CA8A0 /* imgui_demo.cpp */,
+				879F60AF55F4424F81C7793B /* imgui_draw.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		28BD79C7D1714839B8A7E873 /* cgra */ = {
+			isa = PBXGroup;
+			children = (
+				CAB08FB2FC2A42A5A2F413EB /* CMakeLists.txt */,
+				13A81E0DCB2D48B6A3A35172 /* cgra_geometry.cpp */,
+				7CFF58DC5D7641A09C96FDB4 /* cgra_geometry.hpp */,
+				3C8C6B7156474D8C9284A3BF /* cgra_gui.cpp */,
+				2A899C15C8DE434FB818DF86 /* cgra_gui.hpp */,
+				65DA27F1212749F384796BCD /* cgra_image.hpp */,
+				4B500A2A173E4A8EB1A49822 /* cgra_mesh.cpp */,
+				CE70E9578DB24FE28B048712 /* cgra_mesh.hpp */,
+				3B4F23C44E244F268AA10974 /* cgra_shader.cpp */,
+				C5223AFFABEE46529BE5B1FC /* cgra_shader.hpp */,
+				F0E2A69322B06ED800A2B730 /* cgra_shadows.cpp */,
+				F0E2A69422B06ED800A2B730 /* cgra_shadows.hpp */,
+				788488E048AF4DACBA6ECFA5 /* cgra_wavefront.hpp */,
+			);
+			name = cgra;
+			sourceTree = "<group>";
+		};
+		2BBC0FDBD16A4C64ACFEA442 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				28BD79C7D1714839B8A7E873 /* cgra */,
+				1E9EEB0468F54DD6BFE5F5E5 /* CMakeLists.txt */,
+				930261FDD0E84A32AA94B00C /* application.cpp */,
+				1868A9D56C7E47809313B47D /* application.hpp */,
+				406FC2C7A68E4D01B739983E /* main.cpp */,
+				BC997198693944C997FC7CAE /* opengl.hpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		2DE8DCAC80024B2597DA81A8 /* GLFW3 */ = {
+			isa = PBXGroup;
+			children = (
+				1E499263D69644A28ECE5DB2 /* glfw */,
+			);
+			name = GLFW3;
+			sourceTree = "<group>";
+		};
+		31B291E93C3446F2BFD415F0 /* glew */ = {
+			isa = PBXGroup;
+			children = (
+				3871ABFCAFDC4A5C9EE5843D /* Header Files */,
+				0454D877EDC44F4E9B3EA831 /* Source Files */,
+				B101F308FD72477CA97AAA1C /* CMakeLists.txt */,
+			);
+			name = glew;
+			sourceTree = "<group>";
+		};
+		3871ABFCAFDC4A5C9EE5843D /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A3AC1776C5B48D399BE72E1 /* glew.h */,
+				D904C047F977458897E5001B /* glxew.h */,
+				8C55BA183A78414E910A77C9 /* wglew.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		3D12E16F171D44FAB83734C0 /* stb */ = {
+			isa = PBXGroup;
+			children = (
+				86AF598FF5114C2AAF51B456 /* Source Files */,
+				111508A4AE494BFFBC105173 /* CMakeLists.txt */,
+			);
+			name = stb;
+			sourceTree = "<group>";
+		};
+		434BA5DA74074A8599073D0A /* SIMD Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE810F4F350B4BB4AC41935F /* common.h */,
+				63AD9418732846F384ACE4AF /* exponential.h */,
+				F15B233540874209AA4A1353 /* geometric.h */,
+				7BE773F8228C48A6B3BCD371 /* integer.h */,
+				4B6EA96C76CF4334BABDE173 /* matrix.h */,
+				0EA8FCE092A74A1081F12693 /* packing.h */,
+				0A1C48014EC14F138F85F371 /* platform.h */,
+				6E4626AEEA034134B977324A /* trigonometric.h */,
+				85B4B656140D48AEAAEBDCC9 /* vector_relational.h */,
+			);
+			name = "SIMD Files";
+			sourceTree = "<group>";
+		};
+		44D377C9D75B46F1AF5E627C /* Core Files */ = {
+			isa = PBXGroup;
+			children = (
+				D37E121114444ECDBDEB3D4F /* _features.hpp */,
+				D52DBCE4EED2443489F29DC6 /* _fixes.hpp */,
+				717977D4B9AE4642B1B1786D /* _noise.hpp */,
+				8EF34AAC96954DBFA3C07242 /* _swizzle.hpp */,
+				1DB7D406E1574FC2A27B01EC /* _swizzle_func.hpp */,
+				7E86C9D57BAE44BE80991A3B /* _vectorize.hpp */,
+				0BBA7E4E1F774FA68C7B1806 /* compute_vector_relational.hpp */,
+				5D1261C8D21446F7976DB382 /* dummy.cpp */,
+				ACFEB311FB4548F7A6E8B738 /* func_common.hpp */,
+				91840BC92128419F90D68D3F /* func_common.inl */,
+				4B2B19D85060445296E31FA8 /* func_common_simd.inl */,
+				AAFC9B6B6E4549C5B1553588 /* func_exponential.hpp */,
+				2F44139743704917AE07358E /* func_exponential.inl */,
+				466D66B338D54924A67D7553 /* func_exponential_simd.inl */,
+				F44EB1D43FD24C7497AE6B93 /* func_geometric.hpp */,
+				E74696E8A65E4DFB88BDFDFF /* func_geometric.inl */,
+				FC69183AEB36499883608149 /* func_geometric_simd.inl */,
+				F48C83DE39A946C49FF76578 /* func_integer.hpp */,
+				577165179A364D9F983A7378 /* func_integer.inl */,
+				1602C941759D4595A36AAA03 /* func_integer_simd.inl */,
+				17FC37376684408C80D34CB0 /* func_matrix.hpp */,
+				CF84CDEC095B46138520D08D /* func_matrix.inl */,
+				7BBE004AE6D24A65A2AA6E97 /* func_matrix_simd.inl */,
+				6FD0947982D844B9AE055BC3 /* func_packing.hpp */,
+				11BDC0198B9848F6A7316C62 /* func_packing.inl */,
+				177411439B1343FEA6903DF4 /* func_packing_simd.inl */,
+				313C4B1F8B8840FEA6610770 /* func_trigonometric.hpp */,
+				F33112409F7F4FEABF63CA66 /* func_trigonometric.inl */,
+				CC324090A0A340CEA4BCDB4C /* func_trigonometric_simd.inl */,
+				FF89502E91F6462ABCFDDAF8 /* func_vector_relational.hpp */,
+				18C1A89EB713429EA6B95508 /* func_vector_relational.inl */,
+				58DC1489E689471D99DD93F6 /* func_vector_relational_simd.inl */,
+				9E335BA9F3FE412A81C834D9 /* glm.cpp */,
+				13E31547CD1D420690BA0549 /* precision.hpp */,
+				9C9D4C5B43474423B2A98B0C /* setup.hpp */,
+				34934B7D262F475CB7CFCDED /* type_float.hpp */,
+				91DE49BADCE6431FB03A022B /* type_gentype.hpp */,
+				33425D519056456AA4D572D6 /* type_gentype.inl */,
+				EEF22CC5407442D08AF9B921 /* type_half.hpp */,
+				A3624BDA395F4A5E8E9A7A7E /* type_half.inl */,
+				F90DF0E1B5DB47E0B717D0BF /* type_int.hpp */,
+				CB78BA34914149A59648AE19 /* type_mat.hpp */,
+				D861F1C09E02480AA0CA6AC6 /* type_mat.inl */,
+				BB974A2D96F048BDA54880A3 /* type_mat2x2.hpp */,
+				9DF678E61CA449F2837BC72E /* type_mat2x2.inl */,
+				65C35BA46F754F9CBCD216F4 /* type_mat2x3.hpp */,
+				D04BEBABE8CC42309F8A2DA2 /* type_mat2x3.inl */,
+				7B2C3F7907044FD0952FE0AD /* type_mat2x4.hpp */,
+				8CC7A6A00800402CB69BF841 /* type_mat2x4.inl */,
+				D8AC0F4EC8B141008CD337CA /* type_mat3x2.hpp */,
+				EC563075DC8D436A94FDE37E /* type_mat3x2.inl */,
+				51675A5B12CF47E4890A8735 /* type_mat3x3.hpp */,
+				4C707FB59DFE45A3B9683BD4 /* type_mat3x3.inl */,
+				5758AA4BCBF64C05B6179387 /* type_mat3x4.hpp */,
+				01D722D3973F4403BDD8F248 /* type_mat3x4.inl */,
+				3B8B934CBF5B4449A6142919 /* type_mat4x2.hpp */,
+				24CB1A9A95BA405CBDAC701E /* type_mat4x2.inl */,
+				5C405644F0BA499B88DF366D /* type_mat4x3.hpp */,
+				1670F1ADC8CA48B8B7559AFE /* type_mat4x3.inl */,
+				4F31767BB0D04CB1911C2532 /* type_mat4x4.hpp */,
+				5F0C8215ED4249578299CD55 /* type_mat4x4.inl */,
+				5013518F5B4E429A8B809682 /* type_mat4x4_simd.inl */,
+				79B6006C00C947238681CF43 /* type_vec.hpp */,
+				6E2FDD2A30894352A52B6F59 /* type_vec.inl */,
+				C4ED8C340FCF4B24A1A1687E /* type_vec1.hpp */,
+				889DAA27EFD2499C9F26C4B9 /* type_vec1.inl */,
+				BE152DA0D93D4C4F999B1D42 /* type_vec2.hpp */,
+				85A587EE6A984E5D95D59BC9 /* type_vec2.inl */,
+				DBD82F74603E4AE8AE1F08AA /* type_vec3.hpp */,
+				637AC47B48BF4008822759DF /* type_vec3.inl */,
+				8198419D165E4FF0878D938E /* type_vec4.hpp */,
+				F657DC1A8E5A4FA1A81B3F1F /* type_vec4.inl */,
+				E9F401A9D79247AABCC6CA71 /* type_vec4_simd.inl */,
+			);
+			name = "Core Files";
+			sourceTree = "<group>";
+		};
+		44FBDDD06C824A47BFF3DFFB /* glm_dummy */ = {
+			isa = PBXGroup;
+			children = (
+				F3A4AB45BBD64D2D8D172AEC /* Header Files */,
+				44D377C9D75B46F1AF5E627C /* Core Files */,
+				7E39E5F4129E403A8EB7C1DD /* GTC Files */,
+				AF8CDDF8D6F64037BE27BD57 /* GTX Files */,
+				434BA5DA74074A8599073D0A /* SIMD Files */,
+				19EAECCF05F845659EED3BE5 /* CMakeLists.txt */,
+			);
+			name = glm_dummy;
+			sourceTree = "<group>";
+		};
+		4D9FB3A16C0D48608E9E335D /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				E03BADFBC75A4D9A8A084802 /* glfw_config.h */,
+				A0049EEFBD3F4FBC84FA2657 /* glfw3.h */,
+				20F3678B759444DCB7ABE84F /* glfw3native.h */,
+				41FCB7FDBB874447A6957952 /* cocoa_platform.h */,
+				0FAC82F571D74A309FE16C73 /* internal.h */,
+				244A82FAB1E448C5B57B2F7C /* iokit_joystick.h */,
+				F9C582F334ED46C883E3AFC8 /* nsgl_context.h */,
+				B9765FF938294C11A0B0BDB7 /* posix_tls.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		623AC727058B412684C7529B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0E843AB70C64AF182C2C5E3 /* base */,
+				ED5E5AF9E49A487FB427DC17 /* libglew.a */,
+				F901E44F252C43D2B37B7F8B /* libglfw3.a */,
+				1A7F3BAB2C3D4EE7A00BCC6D /* glm_dummy */,
+				3735C7DD20E543459958BCD0 /* libimgui.a */,
+				8BA10BCA538E4519944F99A9 /* libstb.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D6579F0854F4E48AC75A43A /* CGRA */ = {
+			isa = PBXGroup;
+			children = (
+				FA409964BF7447AF81897C40 /* base */,
+			);
+			name = CGRA;
+			sourceTree = "<group>";
+		};
+		6EDBF2A81C0743738CC5AF66 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				092A46D0FA2B43FCB8338B1E /* imconfig.h */,
+				2B4AC25770234BF2AF7D28A8 /* imgui.h */,
+				262AD0F8237C4AC996D15E0C /* imgui_internal.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		7E39E5F4129E403A8EB7C1DD /* GTC Files */ = {
+			isa = PBXGroup;
+			children = (
+				67C9E529ED6C4144871F6ED5 /* bitfield.hpp */,
+				449140CD771F4EFEA6533D65 /* bitfield.inl */,
+				8E9A00D5E4A943AC96A825CF /* color_space.hpp */,
+				3765B9C9051D45D88B447285 /* color_space.inl */,
+				0E685ADBD5D04092BFD70C98 /* constants.hpp */,
+				1A3E106CBF444E8C981F1CD9 /* constants.inl */,
+				566967DECF7B4D659E80C647 /* epsilon.hpp */,
+				B8218391E8FE4FA1ABFCEBD5 /* epsilon.inl */,
+				BF513CDD3D9F4F43B76457C2 /* functions.hpp */,
+				F5542ECBA4B64581B8734014 /* functions.inl */,
+				70F549AB31CC4F0FA49995DC /* integer.hpp */,
+				F1128EA40CBD4644835D2C59 /* integer.inl */,
+				1770EFDCE147404097E4A06F /* matrix_access.hpp */,
+				A4C1023C486743CDB71E30D7 /* matrix_access.inl */,
+				013B75232B3742C9964CA134 /* matrix_integer.hpp */,
+				B70DD68192C948BF85DDEB6F /* matrix_inverse.hpp */,
+				23DE733ED500473A8E27D4CA /* matrix_inverse.inl */,
+				C86E0F1171964C238060EC80 /* matrix_transform.hpp */,
+				5F38B1ABF6EC4C64B2A2089F /* matrix_transform.inl */,
+				39B5FE74634E41588C15091D /* noise.hpp */,
+				A7F5797BED064CE39899834F /* noise.inl */,
+				706C0D32550949DDAA51776E /* packing.hpp */,
+				4352A6EB4D1A435D860554B7 /* packing.inl */,
+				412C3C112D71411EB3F637EE /* quaternion.hpp */,
+				C24BEA17BD894F059A87B9E7 /* quaternion.inl */,
+				A27B8F91C62C4007BF135309 /* quaternion_simd.inl */,
+				105C2950EAAA446CAB16A467 /* random.hpp */,
+				198F589CF4A74210AF3F128C /* random.inl */,
+				BE40B32427E0489CB60F76A8 /* reciprocal.hpp */,
+				7E3F227CB3524902A0A37918 /* reciprocal.inl */,
+				F964AB74966E4770B2BDCBBE /* round.hpp */,
+				EA6B36348DFA4E309898CD0C /* round.inl */,
+				656E099A3FAD4F4F9382BCEB /* type_aligned.hpp */,
+				68D2F4F130E1483AA03CC07A /* type_precision.hpp */,
+				96BADD209B224B7A9E70996A /* type_precision.inl */,
+				E9CB912E0386433AB0EFB99D /* type_ptr.hpp */,
+				15C42F8F18B441CCB6947114 /* type_ptr.inl */,
+				EB4506FCAEFF4FA587ED8ABE /* ulp.hpp */,
+				BE653548C6984292BB477063 /* ulp.inl */,
+				8D5F0A58CEC84126A9C558DF /* vec1.hpp */,
+				97FCF928224A495C8465EF2F /* vec1.inl */,
+			);
+			name = "GTC Files";
+			sourceTree = "<group>";
+		};
+		7F770B5FB3454277804AD192 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		86AF598FF5114C2AAF51B456 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				D1698AEDD0BE43F4B15AE4D5 /* stb.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		9B2A09E65C5F49598596D885 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				7CA76018A5BC47D5B95170CC /* CMakeLists.txt */,
+			);
+			name = res;
+			sourceTree = "<group>";
+		};
+		9BBBBCC7F8B74BD1BCECE5A1 /* GLEW */ = {
+			isa = PBXGroup;
+			children = (
+				31B291E93C3446F2BFD415F0 /* glew */,
+			);
+			name = GLEW;
+			sourceTree = "<group>";
+		};
+		AF8CDDF8D6F64037BE27BD57 /* GTX Files */ = {
+			isa = PBXGroup;
+			children = (
+				955D56801B5B483BA7ADBA56 /* associated_min_max.hpp */,
+				0AAE4C61EBDE44639B079FEB /* associated_min_max.inl */,
+				214D7E4BD4094C0B890AFE4C /* bit.hpp */,
+				9CC664A8FAAF456EBB6EA50C /* bit.inl */,
+				C09971B85C874FB7BF806FF5 /* closest_point.hpp */,
+				B9A58E6A78924365950CC9B3 /* closest_point.inl */,
+				2BEDF9F26AE94656A2A25C36 /* color_encoding.hpp */,
+				366DCFE728D147B89B692DF0 /* color_encoding.inl */,
+				6732A742E7284D5780D1EAB0 /* color_space.hpp */,
+				7806F2109DB5447AAF89250A /* color_space.inl */,
+				80370A611A7341DAA13A61C9 /* color_space_YCoCg.hpp */,
+				7DCED274C87641A08CECFDD7 /* color_space_YCoCg.inl */,
+				244C591CB6BA46D083FFC400 /* common.hpp */,
+				99B24F8342644AA9AF18684D /* common.inl */,
+				D63E37D9C23C4D59902BD705 /* compatibility.hpp */,
+				FDA29BB1AEFD416C95249BBA /* compatibility.inl */,
+				91F82BB7500F48EF9C7E2CCA /* component_wise.hpp */,
+				F11234CB3FB442D1B1A85356 /* component_wise.inl */,
+				EF1DBFF6C8B7489BB2226A34 /* dual_quaternion.hpp */,
+				992A8C506B794E27BB511A0E /* dual_quaternion.inl */,
+				301FFBF211B54B2B80C12332 /* euler_angles.hpp */,
+				2306EC4B9DC2469C9AE6652C /* euler_angles.inl */,
+				67DD34F4620045B3BADF3140 /* extend.hpp */,
+				3BFB3CB5A59746D3900B893E /* extend.inl */,
+				A925B9D626E744949C21CA42 /* extended_min_max.hpp */,
+				19D789FE53804D29994CF4C4 /* extended_min_max.inl */,
+				DF38E3CF50794B8785FD1A39 /* exterior_product.hpp */,
+				7E4C7074208846D7AA11E001 /* exterior_product.inl */,
+				5BA6B9A13C4542FF8509354A /* fast_exponential.hpp */,
+				3BAA965A179443F7A3DB02EC /* fast_exponential.inl */,
+				99D419CB3EE342018D8784A0 /* fast_square_root.hpp */,
+				CFB407ECDB8E487689DA0285 /* fast_square_root.inl */,
+				CC8BC35D80A3488B923431C9 /* fast_trigonometry.hpp */,
+				CD50AB67AE1B48F18ADED18B /* fast_trigonometry.inl */,
+				2B8C75AD42FB4E3E8E3A21F5 /* float_notmalize.inl */,
+				E77EAC0B0CCD4FBB91B20E62 /* gradient_paint.hpp */,
+				9914DA112E754A5F952D07DB /* gradient_paint.inl */,
+				AD5E604048534042AA7BEBA9 /* handed_coordinate_space.hpp */,
+				88BDEC341FF642A8874DD3C5 /* handed_coordinate_space.inl */,
+				E612A3A93E95462CB83DC424 /* hash.hpp */,
+				488DA6D22F0245A0A1A455C9 /* hash.inl */,
+				96FA896A29D441668396E95F /* integer.hpp */,
+				6E98108549A544789CF77056 /* integer.inl */,
+				A4C4D0EDA93F4D26B0DCF860 /* intersect.hpp */,
+				A7DA248741F348CAA03BE743 /* intersect.inl */,
+				B4200F4701E7443AB93AC7A7 /* io.hpp */,
+				FEEF2B43F1B64D6FA0AD52EC /* io.inl */,
+				5F192679E8CC4B70B3DB58B0 /* log_base.hpp */,
+				2B0061C5DC9F46A9BF0D4136 /* log_base.inl */,
+				F8A25D96148C4ADEB692D52C /* matrix_cross_product.hpp */,
+				DC8D64A8A69C4D84A98D315D /* matrix_cross_product.inl */,
+				B9F337041DA04B9D9347E75E /* matrix_decompose.hpp */,
+				51FFE8A6126C4474B68431E7 /* matrix_decompose.inl */,
+				1C7A19FAEFBF46EF94B282C1 /* matrix_factorisation.hpp */,
+				A5435BB1E31D4C378B39AA56 /* matrix_factorisation.inl */,
+				1EB55ABFE3534F3CA3F1AC2A /* matrix_interpolation.hpp */,
+				ABECFD30FC1F42B092A6437A /* matrix_interpolation.inl */,
+				D15F7EA4062546FFB826CA6F /* matrix_major_storage.hpp */,
+				6B2CED76DDBA440D96377B9A /* matrix_major_storage.inl */,
+				DB38F092B39B43ACA5BC5665 /* matrix_operation.hpp */,
+				C48AAF9054814B938AF00A86 /* matrix_operation.inl */,
+				FC111B9A3A5E4BA6B4089F05 /* matrix_query.hpp */,
+				9AAC4714FDD14C399F664F6D /* matrix_query.inl */,
+				590760E4D14841C6A2E5D34E /* matrix_transform_2d.hpp */,
+				E77D06CC62AE4F43A07082B0 /* matrix_transform_2d.inl */,
+				17CEFBF412FD48BD9C4A747A /* mixed_product.hpp */,
+				63C9D6DBCAF74883905701EE /* mixed_product.inl */,
+				C77F941DD7AB41A9B3D186C5 /* norm.hpp */,
+				E0197825F5294B628EFD1EAA /* norm.inl */,
+				5173DA1905C4485BA1618AAE /* normal.hpp */,
+				88AD8142341744BAB4D20A20 /* normal.inl */,
+				69E70F5695E24DEB9895B714 /* normalize_dot.hpp */,
+				35E040FA701D4B45B66196DF /* normalize_dot.inl */,
+				1AB301BABFD647F5B4C1254F /* number_precision.hpp */,
+				A1ECAAC6B7A645BA81D46191 /* number_precision.inl */,
+				A4BE0AEA4FEC4B619EE004E1 /* optimum_pow.hpp */,
+				C5FDA522F3524E7EA3BDD4C8 /* optimum_pow.inl */,
+				A0CDA3C4EA9D45F0A8CEED67 /* orthonormalize.hpp */,
+				10B4418037634CB9A0D04226 /* orthonormalize.inl */,
+				B807F5AE29714BC0BEBED7E9 /* perpendicular.hpp */,
+				80EE2A867C2E4841A6D05BD5 /* perpendicular.inl */,
+				4CAA3CF9D1884E2386A3F6B2 /* polar_coordinates.hpp */,
+				A7DD73B36A244047A1FB0D4F /* polar_coordinates.inl */,
+				958F69D72CC949F59260B1A1 /* projection.hpp */,
+				46B58CE93D8247C6AD09A6CE /* projection.inl */,
+				88D2F54AF9434AF2B353432C /* quaternion.hpp */,
+				89A3B7AD587A4186BB49FD43 /* quaternion.inl */,
+				83A5A20E1CDC4338888142B1 /* range.hpp */,
+				5A3403107D0A4709BB3A1FFE /* raw_data.hpp */,
+				884E1C32616848F3872B8C2C /* raw_data.inl */,
+				11E31FC505E04C6985BFEA65 /* rotate_normalized_axis.hpp */,
+				3C9892C6A4144055A6AC75EC /* rotate_normalized_axis.inl */,
+				F5B27284C4C140F286E3F7E8 /* rotate_vector.hpp */,
+				F407F4031D6F46678C73463C /* rotate_vector.inl */,
+				001A323CCAEC4E11BA8F778C /* scalar_multiplication.hpp */,
+				6CA686F643A64EAAB3E8FBB8 /* scalar_relational.hpp */,
+				B1B0110B2D8C4054AC83DC6E /* scalar_relational.inl */,
+				0E1060B60C064DAD8B2AA644 /* spline.hpp */,
+				9F4B8C0FCF1F47F285D784B4 /* spline.inl */,
+				34816241220E41D09254E50F /* std_based_type.hpp */,
+				A636A7BDFFBE4093AC776262 /* std_based_type.inl */,
+				373B24FEA719499EB3CB29A7 /* string_cast.hpp */,
+				64B953AEFF9948B2935FBFC9 /* string_cast.inl */,
+				1412AED5DDA24905882E2DE1 /* transform.hpp */,
+				87189F3E934147EB9D636889 /* transform.inl */,
+				0FB3C390D6104AC6AE582A6E /* transform2.hpp */,
+				78000B0CFE6B4D6CA6D89F49 /* transform2.inl */,
+				9D4C0F68356B4202BE75F47E /* type_aligned.hpp */,
+				187A1CC3230F485198DE360F /* type_aligned.inl */,
+				2A6DC8411EA34C3B9E76F9A6 /* type_trait.hpp */,
+				3D3099BC65234F80A7F6F8E0 /* type_trait.inl */,
+				9BE771E422364E2C9FEB6294 /* vec_swizzle.hpp */,
+				EE3B8C3ADCEB4B6683765BD9 /* vector_angle.hpp */,
+				C610DD63FD2744DDA283774A /* vector_angle.inl */,
+				5EE3D647D776413C8B86CB3C /* vector_query.hpp */,
+				061647A0BC3549C3A03968BB /* vector_query.inl */,
+				74613744AA5441DBACA8E8C1 /* wrap.hpp */,
+				D4387CAAF4A54E3C9613BEFE /* wrap.inl */,
+			);
+			name = "GTX Files";
+			sourceTree = "<group>";
+		};
+		C9A7110A6611448C8D752338 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		CB638A7CC8DF4FE0AC0D8BDC = {
+			isa = PBXGroup;
+			children = (
+				013647F2633B4F669C9ADBD7 /* ALL_BUILD */,
+				F33779DB636C4A35B7FB6FA2 /* uninstall */,
+				2DE8DCAC80024B2597DA81A8 /* GLFW3 */,
+				9BBBBCC7F8B74BD1BCECE5A1 /* GLEW */,
+				3D12E16F171D44FAB83734C0 /* stb */,
+				FE9A6F519FBC4F6DA649719A /* imgui */,
+				44FBDDD06C824A47BFF3DFFB /* glm_dummy */,
+				6D6579F0854F4E48AC75A43A /* CGRA */,
+				9B2A09E65C5F49598596D885 /* res */,
+				623AC727058B412684C7529B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F33779DB636C4A35B7FB6FA2 /* uninstall */ = {
+			isa = PBXGroup;
+			children = (
+				C9A7110A6611448C8D752338 /* CMake Rules */,
+				1C2339A0DDDB44C190E51CAE /* CMakeLists.txt */,
+			);
+			name = uninstall;
+			sourceTree = "<group>";
+		};
+		F3A4AB45BBD64D2D8D172AEC /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B27C8FB7DDD4C5986CED4DC /* common.hpp */,
+				F4B301E90EEA4E39A583902D /* exponential.hpp */,
+				5A3D8752262C47AF99291C0B /* ext.hpp */,
+				E8352D66B3BC42BD8FD0E78D /* fwd.hpp */,
+				491089AE277540A78BB74037 /* geometric.hpp */,
+				8D8FA26DFF9D47C5B123F6C2 /* glm.hpp */,
+				E64EFF31F3074C72A818B772 /* integer.hpp */,
+				8170A75D6ED44219A9BE25D5 /* mat2x2.hpp */,
+				C67015E8BECF428F8B152593 /* mat2x3.hpp */,
+				CF8353F9E92549EB8FF564CD /* mat2x4.hpp */,
+				FCB760F19C824D43AC5AC776 /* mat3x2.hpp */,
+				18079858545D406BA6D0C996 /* mat3x3.hpp */,
+				23F9342FD8424AEF91114229 /* mat3x4.hpp */,
+				0C74A48723694025BBAF9516 /* mat4x2.hpp */,
+				2091BDE0A7AE450AA7FF77D8 /* mat4x3.hpp */,
+				5D92C55A4EDC42EBAC0E752B /* mat4x4.hpp */,
+				E55492370FCF408B83ADD4F9 /* matrix.hpp */,
+				C53B6430D612423689AEB207 /* packing.hpp */,
+				C110A6E5C7D44FECA622F7FE /* trigonometric.hpp */,
+				B12A0E5E362946DF82CAF434 /* vec2.hpp */,
+				2FE351D2A03D43B881DB656E /* vec3.hpp */,
+				A14B7A2C2465430C93F20C0B /* vec4.hpp */,
+				8DCE470D0424472BBE2285D8 /* vector_relational.hpp */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		FA409964BF7447AF81897C40 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				2BBC0FDBD16A4C64ACFEA442 /* src */,
+			);
+			name = base;
+			sourceTree = "<group>";
+		};
+		FE9A6F519FBC4F6DA649719A /* imgui */ = {
+			isa = PBXGroup;
+			children = (
+				6EDBF2A81C0743738CC5AF66 /* Header Files */,
+				230906F7A9AC4E328FA645CB /* Source Files */,
+				BA3728659B55447EB143BE66 /* CMakeLists.txt */,
+			);
+			name = imgui;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C8F957FB6744FA8A77A4D5F /* imgui */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 332D67A56323463F912F602F /* Build configuration list for PBXNativeTarget "imgui" */;
+			buildPhases = (
+				D8D6DA681CE743539CEFF882 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = imgui;
+			productName = imgui;
+			productReference = 3735C7DD20E543459958BCD0 /* libimgui.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		24AEC5F27174416894F97CCA /* glm_dummy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA28E563A8E14190A0F3E718 /* Build configuration list for PBXNativeTarget "glm_dummy" */;
+			buildPhases = (
+				B224D7D9A8ED49DB9043822B /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glm_dummy;
+			productName = glm_dummy;
+			productReference = 1A7F3BAB2C3D4EE7A00BCC6D /* glm_dummy */;
+			productType = "com.apple.product-type.tool";
+		};
+		354EF6EEF2294690A573702B /* base */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1072772799E5433A85B67BE9 /* Build configuration list for PBXNativeTarget "base" */;
+			buildPhases = (
+				F90B2E6E89B04466B2E7E48C /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CB338363F744F0AB02C37F7 /* PBXTargetDependency */,
+				917F3B1C0D6E4114BB60EEF0 /* PBXTargetDependency */,
+				2E013C2633434D7B83CF0EFC /* PBXTargetDependency */,
+				F851887C3D5E4A23BEFB1EF5 /* PBXTargetDependency */,
+			);
+			name = base;
+			productName = base;
+			productReference = B0E843AB70C64AF182C2C5E3 /* base */;
+			productType = "com.apple.product-type.tool";
+		};
+		674F53DE54F440FAB1E6A9F1 /* glfw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C6DC0871A02439D900C6A0E /* Build configuration list for PBXNativeTarget "glfw" */;
+			buildPhases = (
+				2FE80520126745D6971CC7C3 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glfw;
+			productName = glfw;
+			productReference = F901E44F252C43D2B37B7F8B /* libglfw3.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6F4F919701454C7D9D41126F /* glew */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1900857CC48241AFAF7AF395 /* Build configuration list for PBXNativeTarget "glew" */;
+			buildPhases = (
+				63EDD208E43243D69A170887 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glew;
+			productName = glew;
+			productReference = ED5E5AF9E49A487FB427DC17 /* libglew.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C7691A2397E347BD8C51B9D7 /* stb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 827F1CFC7D324E8588ED0E6B /* Build configuration list for PBXNativeTarget "stb" */;
+			buildPhases = (
+				F65AFC1160CD408B97A46EC3 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = stb;
+			productName = stb;
+			productReference = 8BA10BCA538E4519944F99A9 /* libstb.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D32569D607514A129169F3CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1020;
+			};
+			buildConfigurationList = CCED59964ADB4C07950682E9 /* Build configuration list for PBXProject "CGRA_PROJECT_base" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CB638A7CC8DF4FE0AC0D8BDC;
+			projectDirPath = /Users/camm_rose/Documents/CGRA350/Cityscape/work;
+			projectRoot = "";
+			targets = (
+				14E733E690A94A69B16FFAF0 /* ALL_BUILD */,
+				BA0BBE94217D4B49ACD47824 /* ZERO_CHECK */,
+				354EF6EEF2294690A573702B /* base */,
+				6F4F919701454C7D9D41126F /* glew */,
+				674F53DE54F440FAB1E6A9F1 /* glfw */,
+				24AEC5F27174416894F97CCA /* glm_dummy */,
+				0C8F957FB6744FA8A77A4D5F /* imgui */,
+				43D798DC861640599276B56A /* install */,
+				929CA4D3E8B041EEBF99A1B2 /* res */,
+				C7691A2397E347BD8C51B9D7 /* stb */,
+				6B50436CD9054A88ABF1EA4A /* uninstall */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C305776A3874525B94CE501 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/camm_rose/Documents/CGRA350/Cityscape/build/ext/glfw -f /Users/camm_rose/Documents/CGRA350/Cityscape/build/ext/glfw/CMakeScripts/uninstall_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		2CF560FD7E5D49658A9793BC /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/camm_rose/Documents/CGRA350/Cityscape/build -f /Users/camm_rose/Documents/CGRA350/Cityscape/build/CMakeScripts/install_postBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		5F9831B88159455B82E336B6 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/camm_rose/Documents/CGRA350/Cityscape/build -f /Users/camm_rose/Documents/CGRA350/Cityscape/build/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		B90507B1E0E6492E8A9B91EF /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/camm_rose/Documents/CGRA350/Cityscape/build -f /Users/camm_rose/Documents/CGRA350/Cityscape/build/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FE80520126745D6971CC7C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D9C5BB2998D4258AB0730A3 /* cocoa_init.m in Sources */,
+				D50059F1A96C4A168C94A713 /* cocoa_monitor.m in Sources */,
+				E09962F33C914D059D8E559C /* cocoa_window.m in Sources */,
+				26A61F2199AC47C49E1B17E5 /* context.c in Sources */,
+				94622B22CF28451A86185844 /* init.c in Sources */,
+				976CC35E7E5E4259807D3DD6 /* input.c in Sources */,
+				8419AC6896CB4C66A6DDF346 /* iokit_joystick.m in Sources */,
+				A718389F8BA74E2494877263 /* mach_time.c in Sources */,
+				D0A3E9B647D0459097235A20 /* monitor.c in Sources */,
+				AC3CC639D02B4F3281B5E55A /* nsgl_context.m in Sources */,
+				DA40EBBC89C842A696C12816 /* posix_tls.c in Sources */,
+				64FE2B10C37A456EB28A1C16 /* window.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63EDD208E43243D69A170887 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1467E0D9971D4DE8AA83926C /* glew.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B224D7D9A8ED49DB9043822B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A92A4DE84BD477D82496EA1 /* dummy.cpp in Sources */,
+				3282820844F548C19E0C219C /* glm.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8D6DA681CE743539CEFF882 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE41C407075F45DAA3EC4F3C /* imgui.cpp in Sources */,
+				52EFCACC79F04938A9AFA582 /* imgui_demo.cpp in Sources */,
+				C298E9385A9C4010821F0422 /* imgui_draw.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F65AFC1160CD408B97A46EC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849AB11DC08C4983816988B9 /* stb.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F90B2E6E89B04466B2E7E48C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C37AB1943C854EF2BE2C93E4 /* application.cpp in Sources */,
+				2A53C39B09674EF49A9367E1 /* cgra_geometry.cpp in Sources */,
+				3DE62F3071814893A0B684D3 /* cgra_gui.cpp in Sources */,
+				999D51C3D1854CBCB7A99851 /* cgra_mesh.cpp in Sources */,
+				8EBCBFF3FE9F49F39DA42DAA /* cgra_shader.cpp in Sources */,
+				F0E2A69522B06ED900A2B730 /* cgra_shadows.cpp in Sources */,
+				5292468041834DFC92DE5FAF /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		039B9A2DC6A6460BB9BD436C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24AEC5F27174416894F97CCA /* glm_dummy */;
+			targetProxy = 43F300E037DF415DAA5FB1BD /* PBXContainerItemProxy */;
+		};
+		2CB338363F744F0AB02C37F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 674F53DE54F440FAB1E6A9F1 /* glfw */;
+			targetProxy = 9751DA83CC414140806DBFCF /* PBXContainerItemProxy */;
+		};
+		2E013C2633434D7B83CF0EFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7691A2397E347BD8C51B9D7 /* stb */;
+			targetProxy = FF30BF6580F7458183224790 /* PBXContainerItemProxy */;
+		};
+		43CFFAE0ED174B3AB5F6D343 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F4F919701454C7D9D41126F /* glew */;
+			targetProxy = 24444273305048C3B83D02C4 /* PBXContainerItemProxy */;
+		};
+		56E4520C7C9B4B7B928C7025 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 674F53DE54F440FAB1E6A9F1 /* glfw */;
+			targetProxy = D6CCB79812CA448598D65D08 /* PBXContainerItemProxy */;
+		};
+		8FD254DAA6C6418A867720E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7691A2397E347BD8C51B9D7 /* stb */;
+			targetProxy = 75407C4CC8F94EEFA1115CDF /* PBXContainerItemProxy */;
+		};
+		917F3B1C0D6E4114BB60EEF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F4F919701454C7D9D41126F /* glew */;
+			targetProxy = D802091CEDE748ECBBBB210C /* PBXContainerItemProxy */;
+		};
+		AD17E3DD093C46D98329DA78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C8F957FB6744FA8A77A4D5F /* imgui */;
+			targetProxy = E307BDE050374D6E9CA030CE /* PBXContainerItemProxy */;
+		};
+		C52A75ACB11D491AB5150E58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 354EF6EEF2294690A573702B /* base */;
+			targetProxy = D8C7348FD0124C0298B4D3FF /* PBXContainerItemProxy */;
+		};
+		C5DA75AFD88143F7AB619540 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14E733E690A94A69B16FFAF0 /* ALL_BUILD */;
+			targetProxy = 0F2E8A195E3545C28C03C20E /* PBXContainerItemProxy */;
+		};
+		D7D4D33415184DEA93CD4BC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA0BBE94217D4B49ACD47824 /* ZERO_CHECK */;
+			targetProxy = 368677E2061741579D3F01EE /* PBXContainerItemProxy */;
+		};
+		F851887C3D5E4A23BEFB1EF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C8F957FB6744FA8A77A4D5F /* imgui */;
+			targetProxy = 98F2DFB35649464498C13FF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1377A59B32F34928B9049059 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/Release;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glfw/include,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/imgui,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = imgui;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build/ext/imgui;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		15278AFED17545BE82440F8B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		154EB8F292904BA195CD9C82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		178D55E27E9F4E10889E2D6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		17E840C0C2144DB497725459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build/build;
+			};
+			name = Debug;
+		};
+		2062876F43A34183A28E83AA /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		2A3A764C21D34DA78EBA94E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		2FED91F7DB4D4C08BFD44C0C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/RelWithDebInfo;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glfw/include,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/imgui,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = imgui;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build/ext/imgui;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		33651C58D804469D9903FB7B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glfw/include,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glm/..,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glm_dummy;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build/ext/glm;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		3570F3BC7D23418FACD0CCA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = res;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build/res;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		38CF21E9DAC445B6AD65B4D5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		3E685665495347F0B9BDC2B9 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'CGRA_SRCDIR=\"/Users/camm_rose/Documents/CGRA350/Cityscape/work\"'",
+					GLEW_STATIC,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glfw/include,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/src,
+					"/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glew-1.10.0/include",
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/stb,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/imgui,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=c++1z'",
+					"-Wall",
+					"-Wextra",
+					"-pedantic",
+					"'-fvisibility=hidden'",
+					"-pthread",
+					"-msse2",
+					"'-Werror=return-type'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/MinSizeRel/libglew.a,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/MinSizeRel/libglfw3.a,
+					"-framework",
+					Cocoa,
+					"-framework",
+					OpenGL,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreVideo,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/MinSizeRel/libstb.a,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/MinSizeRel/libimgui.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = base;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		474308A87E444147AFCB8B19 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		4CD858481BF14EA386016711 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/Debug;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					GLEW_STATIC,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glfw/include,
+					"/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glew-1.10.0/include",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/camm_rose/Documents/CGRA350/Cityscape/build/ext/glew-1.10.0";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		5061F5B4019F4A1FBC0801A9 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/MinSizeRel;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_GLFW_USE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glfw/src,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/build/ext/glfw/src,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+					"-Wall",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build/ext/glfw/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		5C5603F501E24288B90F6E7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		60FF13DD1B0640D9A5AE96E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glfw/include,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glm/..,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glm_dummy;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build/ext/glm;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		65460978DB594F279E6D9950 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build/ext/glfw;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		6BABFE00FD1340C0950C88D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'CGRA_SRCDIR=\"/Users/camm_rose/Documents/CGRA350/Cityscape/work\"'",
+					GLEW_STATIC,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glfw/include,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/src,
+					"/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glew-1.10.0/include",
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/stb,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/imgui,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=c++1z'",
+					"-Wall",
+					"-Wextra",
+					"-pedantic",
+					"'-fvisibility=hidden'",
+					"-pthread",
+					"-msse2",
+					"'-Werror=return-type'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/Release/libglew.a,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/Release/libglfw3.a,
+					"-framework",
+					Cocoa,
+					"-framework",
+					OpenGL,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreVideo,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/Release/libstb.a,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/Release/libimgui.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = base;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		6BC58E52CD304CD99EB1CAC2 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build/build;
+			};
+			name = RelWithDebInfo;
+		};
+		6F50F8CE7B4C4B10B47F26D7 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build/ext/glfw;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		70591F347B254D9798DE54EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'CGRA_SRCDIR=\"/Users/camm_rose/Documents/CGRA350/Cityscape/work\"'",
+					GLEW_STATIC,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glfw/include,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/src,
+					"/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glew-1.10.0/include",
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/stb,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/imgui,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"'-std=c++1z'",
+					"-Wall",
+					"-Wextra",
+					"-pedantic",
+					"'-fvisibility=hidden'",
+					"-pthread",
+					"-msse2",
+					"'-Werror=return-type'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/Debug/libglew.a,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/Debug/libglfw3.a,
+					"-framework",
+					Cocoa,
+					"-framework",
+					OpenGL,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreVideo,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/Debug/libstb.a,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/Debug/libimgui.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = base;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		710CA06D6B1A44DD9D94CA6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/Release;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					GLEW_STATIC,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glfw/include,
+					"/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glew-1.10.0/include",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/camm_rose/Documents/CGRA350/Cityscape/build/ext/glew-1.10.0";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		797E27C6DBA94B4F81770E9A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/MinSizeRel;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					GLEW_STATIC,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glfw/include,
+					"/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glew-1.10.0/include",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/camm_rose/Documents/CGRA350/Cityscape/build/ext/glew-1.10.0";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		7A013A3699F44620AC38F4AA /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = res;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build/res;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		7ABBE0F1DC4944E4B609F63E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		7ECDBA627F7D408CBC2FB244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/Debug;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_GLFW_USE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glfw/src,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/build/ext/glfw/src,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-fPIC",
+					"-Wall",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build/ext/glfw/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		89A4DDE21B5B4D0A8B8B24C0 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/MinSizeRel;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glfw/include,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/imgui,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = imgui;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build/ext/imgui;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		8F5E3E8F61174A85A60BFBD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/Debug;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glfw/include,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/stb,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = stb;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build/ext/stb;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		9481DB3C8ACE4CB4B08819F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build/ext/glfw;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		99571EB320384E78A8E9279F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = res;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build/res;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		A76EFB52AC484D41ACC714B1 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/RelWithDebInfo;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_GLFW_USE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glfw/src,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/build/ext/glfw/src,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+					"-Wall",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build/ext/glfw/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		B38BDD37EFC44D0DA3CAD435 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/RelWithDebInfo;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glfw/include,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/stb,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "       -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = stb;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build/ext/stb;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		B58D59A3878A413FA592E947 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		C2BA744BE7B2482A9D83FA3F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'CGRA_SRCDIR=\"/Users/camm_rose/Documents/CGRA350/Cityscape/work\"'",
+					GLEW_STATIC,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glfw/include,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/src,
+					"/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glew-1.10.0/include",
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/stb,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/imgui,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=c++1z'",
+					"-Wall",
+					"-Wextra",
+					"-pedantic",
+					"'-fvisibility=hidden'",
+					"-pthread",
+					"-msse2",
+					"'-Werror=return-type'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/RelWithDebInfo/libglew.a,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/RelWithDebInfo/libglfw3.a,
+					"-framework",
+					Cocoa,
+					"-framework",
+					OpenGL,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreVideo,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/RelWithDebInfo/libstb.a,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/RelWithDebInfo/libimgui.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = base;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		C4DEAE13B370417ABDAADD92 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build/ext/glfw;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		C4FFA28CBAF84FB594E85CBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/Debug;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glfw/include,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/imgui,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = imgui;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build/ext/imgui;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		D5B2FB082C3B413389317B7F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build/build;
+			};
+			name = MinSizeRel;
+		};
+		DB583F0DB7684872842DC6BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		DD10C8E428DA49EA909022B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/Release;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glfw/include,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/stb,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = stb;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build/ext/stb;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		DE0F3A00E49A48EEBAC8AC29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glfw/include,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glm/..,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "    ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glm_dummy;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build/ext/glm;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		E5ECBAE36A3548E68B61F176 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/MinSizeRel;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glfw/include,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/stb,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = stb;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build/ext/stb;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		E69494DF575C4AB6A5FC3544 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = res;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build/res;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		E95E77A8F46540159780D98D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/RelWithDebInfo;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					GLEW_STATIC,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glfw/include,
+					"/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glew-1.10.0/include",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "       -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/camm_rose/Documents/CGRA350/Cityscape/build/ext/glew-1.10.0";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		EE921FD46681437F8CEA3E55 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		F5D282471E15467C92DF495F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/Release;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_GLFW_USE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glfw/src,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/build/ext/glfw/src,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+					"-Wall",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build/ext/glfw/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		FA717B35DEAD461BB98D928A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/camm_rose/Documents/CGRA350/Cityscape/build/bin/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glfw/include,
+					/Users/camm_rose/Documents/CGRA350/Cityscape/work/ext/glm/..,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glm_dummy;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build/ext/glm;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		FCB2A81BCDD044C4901B0C1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = /Users/camm_rose/Documents/CGRA350/Cityscape/build/build;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1072772799E5433A85B67BE9 /* Build configuration list for PBXNativeTarget "base" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70591F347B254D9798DE54EB /* Debug */,
+				6BABFE00FD1340C0950C88D5 /* Release */,
+				3E685665495347F0B9BDC2B9 /* MinSizeRel */,
+				C2BA744BE7B2482A9D83FA3F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1900857CC48241AFAF7AF395 /* Build configuration list for PBXNativeTarget "glew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CD858481BF14EA386016711 /* Debug */,
+				710CA06D6B1A44DD9D94CA6A /* Release */,
+				797E27C6DBA94B4F81770E9A /* MinSizeRel */,
+				E95E77A8F46540159780D98D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		332D67A56323463F912F602F /* Build configuration list for PBXNativeTarget "imgui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4FFA28CBAF84FB594E85CBA /* Debug */,
+				1377A59B32F34928B9049059 /* Release */,
+				89A4DDE21B5B4D0A8B8B24C0 /* MinSizeRel */,
+				2FED91F7DB4D4C08BFD44C0C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3B4BE8686A0E491584FBCAF9 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				154EB8F292904BA195CD9C82 /* Debug */,
+				2A3A764C21D34DA78EBA94E4 /* Release */,
+				474308A87E444147AFCB8B19 /* MinSizeRel */,
+				EE921FD46681437F8CEA3E55 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6EBBE940B9CB474D93FF63FD /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C5603F501E24288B90F6E7B /* Debug */,
+				178D55E27E9F4E10889E2D6D /* Release */,
+				15278AFED17545BE82440F8B /* MinSizeRel */,
+				2062876F43A34183A28E83AA /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7C6DC0871A02439D900C6A0E /* Build configuration list for PBXNativeTarget "glfw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ECDBA627F7D408CBC2FB244 /* Debug */,
+				F5D282471E15467C92DF495F /* Release */,
+				5061F5B4019F4A1FBC0801A9 /* MinSizeRel */,
+				A76EFB52AC484D41ACC714B1 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		827F1CFC7D324E8588ED0E6B /* Build configuration list for PBXNativeTarget "stb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F5E3E8F61174A85A60BFBD9 /* Debug */,
+				DD10C8E428DA49EA909022B4 /* Release */,
+				E5ECBAE36A3548E68B61F176 /* MinSizeRel */,
+				B38BDD37EFC44D0DA3CAD435 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AA881FEFF30D4070A4780834 /* Build configuration list for PBXAggregateTarget "res" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99571EB320384E78A8E9279F /* Debug */,
+				3570F3BC7D23418FACD0CCA0 /* Release */,
+				7A013A3699F44620AC38F4AA /* MinSizeRel */,
+				E69494DF575C4AB6A5FC3544 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C4B529471CB74CACB77ECD44 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B58D59A3878A413FA592E947 /* Debug */,
+				DB583F0DB7684872842DC6BF /* Release */,
+				7ABBE0F1DC4944E4B609F63E /* MinSizeRel */,
+				38CF21E9DAC445B6AD65B4D5 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CA28E563A8E14190A0F3E718 /* Build configuration list for PBXNativeTarget "glm_dummy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE0F3A00E49A48EEBAC8AC29 /* Debug */,
+				60FF13DD1B0640D9A5AE96E6 /* Release */,
+				33651C58D804469D9903FB7B /* MinSizeRel */,
+				FA717B35DEAD461BB98D928A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CCED59964ADB4C07950682E9 /* Build configuration list for PBXProject "CGRA_PROJECT_base" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17E840C0C2144DB497725459 /* Debug */,
+				FCB2A81BCDD044C4901B0C1E /* Release */,
+				D5B2FB082C3B413389317B7F /* MinSizeRel */,
+				6BC58E52CD304CD99EB1CAC2 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FE6A86DA45A54711A18A8834 /* Build configuration list for PBXAggregateTarget "uninstall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9481DB3C8ACE4CB4B08819F2 /* Debug */,
+				65460978DB594F279E6D9950 /* Release */,
+				6F50F8CE7B4C4B10B47F26D7 /* MinSizeRel */,
+				C4DEAE13B370417ABDAADD92 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D32569D607514A129169F3CB /* Project object */;
+}
